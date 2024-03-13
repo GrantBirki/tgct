@@ -1,6 +1,6 @@
 # tgct 💙
 
-[![deploy](https://github.com/GrantBirki/tgct/actions/workflows/deploy.yml/badge.svg)](https://github.com/GrantBirki/tgct/actions/workflows/deploy.yml) [![ci](https://github.com/GrantBirki/tgct/actions/workflows/ci.yml/badge.svg)](https://github.com/GrantBirki/tgct/actions/workflows/ci.yml)
+[![deploy](https://github.com/GrantBirki/tgct/actions/workflows/deploy.yml/badge.svg)](https://github.com/GrantBirki/tgct/actions/workflows/deploy.yml) [![ci](https://github.com/GrantBirki/tgct/actions/workflows/ci.yml/badge.svg)](https://github.com/GrantBirki/tgct/actions/workflows/ci.yml) [![Unlock On Merge](https://github.com/GrantBirki/tgct/actions/workflows/unlock-on-merge.yml/badge.svg)](https://github.com/GrantBirki/tgct/actions/workflows/unlock-on-merge.yml)
 
 My personal story with TGCT.
 
