@@ -1,0 +1,5 @@
+.vscode/
+resources/
+.DS_Store
+tmp/
+public/
