@@ -2,7 +2,7 @@
 
 baseURL: https://tgct.birki.io/
 languageCode: en-us
-title: 💙 tgct
+title: tgct
 theme: [hugo-video, PaperMod]
 
 paginate: 15
