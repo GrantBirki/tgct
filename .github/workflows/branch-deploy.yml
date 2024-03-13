@@ -1,0 +1,203 @@
+name: branch deploy
+
+# The workflow to execute on is comments that are newly created
+on:
+  issue_comment:
+    types: [ created ]
+
+# Permissions needed for reacting and adding comments for IssueOps commands
+permissions:
+  pull-requests: write
+  deployments: write
+  contents: write
+  checks: read
+  pages: write
+  id-token: write
+
+# set an environment variable for use in the jobs pointing to my site
+env:
+  web_url: https://tgct.birki.io
+
+jobs:
+  # branch-deploy trigger job
+  trigger:
+    if: # only run on pull request comments and very specific comment body string as defined in our branch-deploy settings
+      ${{ github.event.issue.pull_request &&
+      (contains(github.event.comment.body, '.deploy') ||
+      contains(github.event.comment.body, '.lock') ||
+      contains(github.event.comment.body, '.noop') ||
+      contains(github.event.comment.body, '.help') ||
+      contains(github.event.comment.body, '.wcid') ||
+      contains(github.event.comment.body, '.unlock')) }}
+    runs-on: ubuntu-latest
+    outputs: # set outputs for use in downstream jobs
+      continue: ${{ steps.branch-deploy.outputs.continue }}
+      noop: ${{ steps.branch-deploy.outputs.noop }}
+      deployment_id: ${{ steps.branch-deploy.outputs.deployment_id }}
+      environment: ${{ steps.branch-deploy.outputs.environment }}
+      ref: ${{ steps.branch-deploy.outputs.ref }}
+      comment_id: ${{ steps.branch-deploy.outputs.comment_id }}
+      initial_reaction_id: ${{ steps.branch-deploy.outputs.initial_reaction_id }}
+      actor_handle: ${{ steps.branch-deploy.outputs.actor_handle }}
+
+    steps:
+      # execute the branch-deploy action
+      - uses: github/branch-deploy@v9
+        id: branch-deploy
+        with:
+          trigger: ".deploy"
+          environment: "github-pages"
+          production_environments: "github-pages"
+          skip_completing: "true" # we will complete the deployment manually in the 'result' job
+          admins: "GrantBirki"
+
+  # build the github-pages site with hugo
+  build:
+    needs: trigger
+    if: ${{ needs.trigger.outputs.continue == 'true' }} # only run if the trigger job set continue to true
+    runs-on: ubuntu-latest
+
+    steps:
+      # checkout the project's repository based on the ref provided by the branch-deploy step
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.trigger.outputs.ref }}
+
+      # read the hugo version from the .hugo-version file in this repository
+      - name: set hugo version
+        id: hugo-version
+        run: |
+          HUGO_VERSION=$(cat .hugo-version)
+          echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_OUTPUT
+
+      # install the hugo cli using the version detected in the previous step
+      - name: install vendored hugo cli
+        env:
+          HUGO_VERSION: ${{ steps.hugo-version.outputs.HUGO_VERSION }}
+        run: sudo dpkg -i vendor/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+
+      # configure the GitHub Pages action
+      - name: setup pages
+        id: pages
+        uses: actions/configure-pages@v4.0.0
+
+      # build the site with hugo
+      - name: build with hugo
+        run: hugo --gc --logLevel info --baseURL ${{ steps.pages.outputs.base_url }}
+
+      # this step is custom to my site and adds a 'commit' version to the site
+      - name: write build version
+        run: echo ${GITHUB_SHA} > ./public/version.txt
+
+      # upload the built site as an artifact for the deploy step
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # deploy to GitHub Pages
+  deploy:
+    needs: [ trigger, build ]
+    if: ${{ needs.trigger.outputs.continue == 'true' }} # only run if the trigger job set continue to true
+    runs-on: ubuntu-latest
+
+    steps:
+      # deploy the site to GitHub Pages
+      - name: deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # update the deployment result - manually complete the deployment that was created by the branch-deploy action
+  result:
+    needs: [ trigger, build, deploy ]
+    runs-on: ubuntu-latest
+    # run even on failures but only if the trigger job set continue to true
+    if: ${{ always() && needs.trigger.outputs.continue == 'true' }}
+
+    steps:
+      # if a previous step failed, set a variable to use as the deployment status
+      - name: set deployment status
+        id: deploy-status
+        if: ${{ needs.trigger.result == 'failure' || needs.build.result == 'failure' ||
+          needs.deploy.result == 'failure' }}
+        run: |
+          echo "DEPLOY_STATUS=failure" >> $GITHUB_OUTPUT
+
+      # use the GitHub CLI to update the deployment status that was initiated by the branch-deploy action
+      - name: create a deployment status
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+          DEPLOY_STATUS: ${{ steps.deploy-status.outputs.DEPLOY_STATUS }}
+        run: |
+          if [ -z "${DEPLOY_STATUS}" ]; then
+            DEPLOY_STATUS="success"
+          fi
+
+          gh api \
+            --method POST \
+            repos/{owner}/{repo}/deployments/${{ needs.trigger.outputs.deployment_id }}/statuses \
+            -f environment='${{ needs.trigger.outputs.environment }}' \
+            -f state=${DEPLOY_STATUS}
+        
+      # use the GitHub CLI to remove the non-sticky lock that was created by the branch-deploy action
+      - name: remove a non-sticky lock
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api \
+            --method DELETE \
+            repos/{owner}/{repo}/git/refs/heads/${{ needs.trigger.outputs.environment }}-branch-deploy-lock
+
+      # remove the default 'eyes' reaction from the comment that triggered the deployment
+      # this reaction is added by the branch-deploy action by default
+      - name: remove eyes reaction
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api \
+            --method DELETE \
+            repos/{owner}/{repo}/issues/comments/${{ needs.trigger.outputs.comment_id }}/reactions/${{ needs.trigger.outputs.initial_reaction_id }}
+
+      # if the deployment was successful, add a 'rocket' reaction to the comment that triggered the deployment
+      - name: rocket reaction
+        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
+        uses: GrantBirki/comment@d5cdf0243751ca01060946b2cae3722e508b7b16 # pin@v2.0.9
+        with:
+          comment-id: ${{ needs.trigger.outputs.comment_id }}
+          reactions: rocket
+
+      # if the deployment failed, add a '-1' (thumbs down) reaction to the comment that triggered the deployment
+      - name: failure reaction
+        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
+        uses: GrantBirki/comment@d5cdf0243751ca01060946b2cae3722e508b7b16 # pin@v2.0.9
+        with:
+          comment-id: ${{ needs.trigger.outputs.comment_id }}
+          reactions: "-1"
+
+      # if the deployment was successful, add a 'success' comment
+      - name: success comment
+        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # pin@v4.0.0
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ### Deployment Results ✅
+
+            **${{ needs.trigger.outputs.actor_handle }}** successfully deployed branch `${{ needs.trigger.outputs.ref }}` to **${{ needs.trigger.outputs.environment }}**
+
+            > [View Live Deployment](${{ env.web_url }}) :link:
+
+      # if the deployment was not successful, add a 'failure' comment
+      - name: failure comment
+        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # pin@v4.0.0
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            ### Deployment Results ❌
+
+            **${{ needs.trigger.outputs.actor_handle }}** had a failure when deploying `${{ needs.trigger.outputs.ref }}` to **${{ needs.trigger.outputs.environment }}**
