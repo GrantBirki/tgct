@@ -1,35 +1,38 @@
 ---
-title: "Example"
-author: ["hugo", "monalisa"] # can be an array or just a string
-description: "This is an example blog post containing full markdown syntax and usage"
+title: "Journey with TGCT"
+author: ["Grant Birkinbine"] # can be an array or just a string
+description: "My experience being diagnosed, living with, and overcoming TGCT."
 
 # The summary is for search engines
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
 
-date: 2000-01-01T00:00:00-00:00 # date of creation
+date: 2024-03-13T00:00:00-00:00 # date of creation
 
-tags: ["markdown", "css", "html", "themes"] # micro level categories
-aliases: ["markdown-example"] # redirect, alias, shorthand url
+tags: ["tgct", "pvns"] # micro level categories
+# aliases: ["markdown-example"] # redirect, alias, shorthand url
 
-categories: ["themes", "syntax"] # high level categories
+categories: ["tgct", "health", "story"] # high level categories
 categoryColors:
-  themes:
+  tgct:
     gradientStart: "#007FEE"
     gradientEnd: "#00DBD8"
-  syntax:
+  health:
     gradientStart: "#7E25C7"
     gradientEnd: "#F90183"
+  story:
+    gradientStart: "#FF524C"
+    gradientEnd: "#F9C52A"
 
 ShowToc: true # show table of contents
 TocOpen: true # auto open table of contents
 searchHidden: false # hide from search
 
 # blog post cover image
-# cover:
-#   image: "cover.jpg" # the image name MUST ALWAYS be cover.[extension]
-#   alt: "example"
-#   caption: "example" # optional caption text
-#   relative: true
+cover:
+  image: "cover.png" # the image name MUST ALWAYS be cover.[extension]
+  alt: "Journey with TGCT"
+  # caption: "example" # optional caption text
+  relative: true
 
 # lower weight = higher precedence - 0 is interpreted as an unset weight
 weight: 0
