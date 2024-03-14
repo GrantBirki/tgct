@@ -1,0 +1,3 @@
+# disable inline HTML warnings
+MD033: false
+MD013: false
