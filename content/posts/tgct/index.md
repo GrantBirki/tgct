@@ -132,7 +132,21 @@ I was able to get an appointment with the orthopedic doctor within a few days. I
 
 My doctor seemed to be fixated on the idea that I had a sexually transmitted disease. He proceeded to order a full blood panel, a hip aspiration, and an MRI. Perhaps I should give him a bit of credit for being thorough which is a good thing, but I was not happy with the approach he was taking.
 
-I went right to the hospital to get my blood drawn and the results came back clean right away. The doctor *still* was suspicious so he continued with the hip aspiration with the goal of sampling fluid from inside my hip for any pathogens.
+I went right to the hospital to get my blood drawn and the results came back clean right away. The only abnormality was that my c-reactive protein (CRP) levels were slightly elevated. This is a protein that is produced by the liver and is a marker of inflammation in the body. It was determined that these levels weren't unusual for someone experiencing a flare up like mine (infection wise).
+
+![high-crp](high-c-reactive.png)
+
+> My CRP results from 10/06/2023
+
+All other blood work looked normal:
+
+![blood1](blood1.png)
+![blood2](blood2.png)
+![blood3](blood3.png)
+
+> My full blood panel results from 10/06/2023
+
+The doctor *still* was suspicious so he continued with the hip aspiration with the goal of sampling fluid from inside my hip for any pathogens.
 
 The hip aspiration was one of the most painful things I have ever experienced. The proceeded started with my doctor saying that he "really had done these on the hip before". I was laid on a table and they injected tiny needles with local anesthetic into my hip before they inserted a much larger needle to draw out the fluid. The much larger needle was guided by x-ray imaging and I was told to stay completely still. First, the anesthetic had almost no effect and I could feel the needle going into my hip. I was biting my lip so much it began to bleed so I switch to biting my hand and cussing. The doctor was having a very difficult time getting fluid out and I was unable to stay still due to the pain. A nurse then gave me a self-administered tube of nitrous oxide to help with the pain. I began to huff nitrous like my life depended on it and before I knew it I was so high that sound began to become distorted. The doctor and the x-ray technician began to argue, the needle got stuck, and they had to start over from a new angle. The doctor was finally able to remove 6ccs of fluid from my right hip. I left the appointment, violently high on nitrous, and in a wheelchair.
 
