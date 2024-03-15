@@ -115,12 +115,19 @@ I was in the middle of another flare up. This time it was not as bad as the firs
 I was able to get an appointment with the orthopedic doctor within a few days. I was still in a decent amount of pain, had limited mobility, and my hip was still locked up. The orthopedic doctor did a physical exam and asked me when I first experienced the pain. Here is how our conversation went:
 
 **Doctor**: "So, when did you first experience pain with this hip?"
+
 **Me**: "My first flare up was in June just after coming back from Costa Rica."
+
 **Doctor**: *Gives me a look* "How was Costa Rica?..."
+
 **Me**: "It was a lot of fun!"
+
 **Doctor**: "Oh... Did you have any sexual partners while you were there?"
+
 **Me**: "Uhh... no? How is that even relevant?"
+
 **Doctor**: "Well, I'm just trying to rule out any sexually transmitted diseases. It kind of looks like you coul have a septic hip from gonorrhea."
+
 **Me**: *Visibly Puzzled* "I'm pretty sure I don't have gonorrhea. I've been in a monogamous relationship for the past 7 years and I've never had any symptoms of an STD."
 
 My doctor seemed to be fixated on the idea that I had a sexually transmitted disease. He proceeded to order a full blood panel, a hip aspiration, and an MRI. Perhaps I should give him a bit of credit for being thorough which is a good thing, but I was not happy with the approach he was taking.
