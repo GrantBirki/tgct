@@ -69,7 +69,7 @@ This section is mainly included to add some base context around TGCT. In fact, i
 
 ### First Symptoms
 
-The first time I experienced my first symptoms of TGCT was early June 2023. I was living in Boulder, CO for half of the year and the other half I was living in London, UK with my partner who was earing her Master's degree at Kings College London. I had just spent about four months in London and returned to Boulder for only a few days before flying to Costa Rica for a work conference. I was in Costa Rica for about a week and then flew back to Boulder. I was run down and had been traveling **a lot**. I decided to hit the gym to try and bounce back from all the travel. I was doing the adductor/abductor machines to work on my hips that day during one of my sets. This was nothing out of the ordinary for me. I had been regularly going to the gym for 4-5 days a week for the last year without an issues. However, this time it would be very different. I did not notice anything out of the ordinary during my workout. I was feeling good and was happy to be back in the gym. I finished my workout and went home. I was feeling a bit sore, but nothing out of the ordinary. I went to bed and that was when I would first notice something was wrong.
+The first time I experienced my first symptoms of TGCT was early June 2023. I was living in Boulder, CO for half of the year and the other half I was living in London, UK with my partner who was earing her Master's degree at Kings College London. I had just spent about four months in London and returned to Boulder for only a few days before flying to Costa Rica for a work conference. I was in Costa Rica for about a week and then flew back to Boulder. I was run down and had been traveling **a lot**. I decided to hit the gym to try and bounce back from all the travel. I was doing the [adductor](https://en.wikipedia.org/wiki/Adductor_muscles_of_the_hip) machine to work on my hips that day during one of my sets. This was nothing out of the ordinary for me. I had been regularly going to the gym for 4-5 days a week for the last year without an issues. However, this time it would be very different. I did not notice anything out of the ordinary during my workout. I was feeling good and was happy to be back in the gym. I finished my workout and went home. I was feeling a bit sore, but nothing out of the ordinary. I went to bed and that was when I would first notice something was wrong.
 
 I woke up at about 3am in excruciating pain. I had never felt anything like it before. I was in so much pain that I was unable to move my leg into any position that was comfortable. I couldn't sleep and I laid in bed shallow breathing for hours. I kept wondering if I had torn a muscle during my working but it seemed so odd that it would be so delayed (hours) and I hadn't done anything out of my normal routine...
 
@@ -101,12 +101,48 @@ Before I knew it, it was September and my partner and I were back in the United 
 
 One day after work, I found myself at our community gym in Steamboat. I noticed a machine that looked new and was used for training the hip flexors. I thought it might be good to do some very light weight reps to try and strengthen my hip flexors since I was now "all healed from my injury". I did maybe 2 sets of 5 at 15 pounds and stopped. Something just didn't feel quite right... It wasn't painful, but it felt wrong - almost like a "squish" in my hip. I decided to call it quits and went home and took some ibuprofen as a preventative measure.
 
-One day passes... slight pain.
-
-Two days pass... more pain.
-
-Three days pass... I'm limping again.
-
-Four days pass... I'm in excruciating pain again and need to buy crutches.
+- One day passes... slight pain.
+- Two days pass... more pain.
+- Three days pass... I'm limping again.
+- Four days pass... I'm in excruciating pain again and need to buy crutches.
 
 I was in the middle of another flare up. This time it was not as bad as the first, but it was still very painful. I was unable to walk and my entire joint had locked up due to the inflammation. I had decided that it was time to see an orthopedic doctor.
+
+### Initial Diagnosis
+
+> I will not be providing the name of the orthopedic doctor that I saw. I was not happy with the care that I received and I do not want to promote their practice. If you are truly interested in the name of the doctor I'm sure it can be easily deduced from the information I provide.
+
+I was able to get an appointment with the orthopedic doctor within a few days. I was still in a decent amount of pain, had limited mobility, and my hip was still locked up. The orthopedic doctor did a physical exam and asked me when I first experienced the pain. Here is how our conversation went:
+
+**Doctor**: "So, when did you first experience pain with this hip?"
+**Me**: "My first flare up was in June just after coming back from Costa Rica."
+**Doctor**: *Gives me a look* "How was Costa Rica?..."
+**Me**: "It was a lot of fun!"
+**Doctor**: "Oh... Did you have any sexual partners while you were there?"
+**Me**: "Uhh... no? How is that even relevant?"
+**Doctor**: "Well, I'm just trying to rule out any sexually transmitted diseases. It kind of looks like you coul have a septic hip from gonorrhea."
+**Me**: *Visibly Puzzled* "I'm pretty sure I don't have gonorrhea. I've been in a monogamous relationship for the past 7 years and I've never had any symptoms of an STD."
+
+My doctor seemed to be fixated on the idea that I had a sexually transmitted disease. He proceeded to order a full blood panel, a hip aspiration, and an MRI. Perhaps I should give him a bit of credit for being thorough which is a good thing, but I was not happy with the approach he was taking.
+
+I went right to the hospital to get my blood drawn and the results came back clean right away. The doctor *still* was suspicious so he continued with the hip aspiration with the goal of sampling fluid from inside my hip for any pathogens.
+
+The hip aspiration was one of the most painful things I have ever experienced. The proceeded started with my doctor saying that he "really had done these on the hip before". I was laid on a table and they injected tiny needles with local anesthetic into my hip before they inserted a much larger needle to draw out the fluid. The much larger needle was guided by x-ray imaging and I was told to stay completely still. First, the anesthetic had almost no effect and I could feel the needle going into my hip. I was biting my lip so much it began to bleed so I switch to biting my hand and cussing. The doctor was having a very difficult time getting fluid out and I was unable to stay still due to the pain. A nurse then gave me a self-administered tube of nitrous oxide to help with the pain. I began to huff nitrous like my life depended on it and before I knew it I was so high that sound began to become distorted. The doctor and the x-ray technician began to argue, the needle got stuck, and they had to start over from a new angle. The doctor was finally able to remove 6ccs of fluid from my right hip. I left the appointment, violently high on nitrous, and in a wheelchair.
+
+> If for some reason I ever need to get a hip aspiration again, I think I will skip it and take my $800 and spend it on medical grade nitrous oxide instead 😂. *0/10*
+
+The last of my results to come through was my MRI. It took a few days for the final report to come back as a third party radiologist had to review the images in Denver. The doctor called me from his personal cell phone after the office had closed to read the results to me.
+
+**Doctor**: "The MRI came back and it looks like you have a labral tear in your right hip. We also see a large amount of inflammation in the joint and bone edema. The radiologist has also suggested that there is a mass and synovial inflammation that represents PVNS."
+
+**Me:** "Oh okay, that is great! Just a labral tear, inflammation, and some bone swelling. Wait what is PVNS?"
+
+**Doctor**: "It's a rare tumor. Truthfully, I've never seen it before like this in a hip. I have seen it in the knee before, but never in the hip."
+
+**Me**: 🫥
+
+My heart was pretty much beating out of my chest when I heard the words *tumor*, *rare*, and *never seen before*. I was in a state of shock and disbelief. I asked the doctor as many questions as I could on the phone like: *What is PVNS? What causes it? How do you treat it? Can it spread?* The doctor was not able to answer any of the questions that I asked and told me that he would have to do some research and get back to me.
+
+Being a generally anxious person (health wise) to begin with, I began frantically searching online for information about PVNS. I found myself on dozens of different websites, reading research papers, and attempting to study other MRI images of PVNS. The information that I found began to scare me even more, I was reading about how PVNS can be aggressive, how it can destroy joints and even bone, and how it can even recur after treatment. At the time I wish I could have just turned off my brain and stopped thinking about it, but I couldn't. This disease was rare and my doctor knew almost nothing about it. I felt like I would need to be my own doctor, researcher, and advocate. I felt alone.
+
+
