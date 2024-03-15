@@ -36,7 +36,7 @@ cover:
 
 # lower weight = higher precedence - 0 is interpreted as an unset weight
 weight: 0
-draft: true
+draft: false
 ---
 
 ## My Journey with Localized TGCT
