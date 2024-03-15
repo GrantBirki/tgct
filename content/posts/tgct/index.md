@@ -153,3 +153,9 @@ My heart was pretty much beating out of my chest when I heard the words *tumor*,
 Being a generally anxious person (health wise) to begin with, I began frantically searching online for information about PVNS. I found myself on dozens of different websites, reading research papers, and attempting to study other MRI images of PVNS. The information that I found began to scare me even more, I was reading about how PVNS can be aggressive, how it can destroy joints and even bone, and how it can even recur after treatment. At the time I wish I could have just turned off my brain and stopped thinking about it, but I couldn't. This disease was rare and my doctor knew almost nothing about it. I felt like I would need to be my own doctor, researcher, and advocate.
 
 I felt alone.
+
+### Second Opinions
+
+Right away after being diagnosed, I knew that I needed to get more eyes on my results. If this disease is truly as rare as they say it is, then that also means that there has to be limited diagnostic experience with it as well. That means that its quite possible I have been misdiagnosed and I don't actually have PVNS/TGCT.
+
+> The chances of being stuck by lightning are [1 in 15,300](https://www.britannica.com/question/What-are-the-chances-of-being-struck-by-lightning#:~:text=The%20odds%20that%20one%20will,struck%20by%20lightning%20every%20year.) so surely I haven't developed a tumor with 39 in 1,000,000 odds, right?
