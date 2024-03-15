@@ -126,7 +126,7 @@ I was able to get an appointment with the orthopedic doctor within a few days. I
 
 **Me**: "Uhh... no? How is that even relevant?"
 
-**Doctor**: "Well, I'm just trying to rule out any sexually transmitted diseases. It kind of looks like you coul have a septic hip from gonorrhea."
+**Doctor**: "Well, I'm just trying to rule out any sexually transmitted diseases. It kind of looks like you could have a septic hip from gonorrhea."
 
 **Me**: *Visibly Puzzled* "I'm pretty sure I don't have gonorrhea. I've been in a monogamous relationship for the past 7 years and I've never had any symptoms of an STD."
 
@@ -150,6 +150,6 @@ The last of my results to come through was my MRI. It took a few days for the fi
 
 My heart was pretty much beating out of my chest when I heard the words *tumor*, *rare*, and *never seen before*. I was in a state of shock and disbelief. I asked the doctor as many questions as I could on the phone like: *What is PVNS? What causes it? How do you treat it? Can it spread?* The doctor was not able to answer any of the questions that I asked and told me that he would have to do some research and get back to me.
 
-Being a generally anxious person (health wise) to begin with, I began frantically searching online for information about PVNS. I found myself on dozens of different websites, reading research papers, and attempting to study other MRI images of PVNS. The information that I found began to scare me even more, I was reading about how PVNS can be aggressive, how it can destroy joints and even bone, and how it can even recur after treatment. At the time I wish I could have just turned off my brain and stopped thinking about it, but I couldn't. This disease was rare and my doctor knew almost nothing about it. I felt like I would need to be my own doctor, researcher, and advocate. I felt alone.
+Being a generally anxious person (health wise) to begin with, I began frantically searching online for information about PVNS. I found myself on dozens of different websites, reading research papers, and attempting to study other MRI images of PVNS. The information that I found began to scare me even more, I was reading about how PVNS can be aggressive, how it can destroy joints and even bone, and how it can even recur after treatment. At the time I wish I could have just turned off my brain and stopped thinking about it, but I couldn't. This disease was rare and my doctor knew almost nothing about it. I felt like I would need to be my own doctor, researcher, and advocate.
 
-
+I felt alone.
