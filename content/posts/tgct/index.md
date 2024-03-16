@@ -181,6 +181,10 @@ The hip aspiration was one of the most painful things I have ever experienced. T
 Right after being diagnosed, I knew that I needed to get more eyes on my results. If this disease is truly as rare as they say it is, then that also means that there has to be limited diagnostic experience with it as well. That means its quite possible I have been misdiagnosed and I don't actually have PVNS/TGCT.
 
 > The chances of being stuck by lightning are [1 in 15,300](https://www.britannica.com/question/What-are-the-chances-of-being-struck-by-lightning#:~:text=The%20odds%20that%20one%20will,struck%20by%20lightning%20every%20year.) so surely I haven't developed a tumor with 39 in 1,000,000 odds, right?
+>
+> — <cite>britannica[^2]</cite>
+
+[^2]: [britannica](https://www.britannica.com/question/What-are-the-chances-of-being-struck-by-lightning#:~:text=The%20odds%20that%20one%20will,struck%20by%20lightning%20every%20year.)
 
 I first reached out to a family friend that recently retired from his career as an orthopedic surgeon. He reviewed my MRI report (not the actual images) and told me that it was very well written and did indeed make a strong case for TGCT.
 
