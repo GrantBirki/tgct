@@ -132,7 +132,7 @@ I was able to get an appointment with the orthopedic doctor within a few days. I
 
 My doctor seemed to be fixated on the idea that I had a sexually transmitted disease. He proceeded to order a full blood panel, a hip aspiration, and an MRI. Perhaps I should give him a bit of credit for being thorough which is a good thing, but I was not happy with the approach he was taking.
 
-I went right to the hospital to get my blood drawn and the results came back clean right away. The only abnormality was that my c-reactive protein (CRP) levels were slightly elevated. This is a protein that is produced by the liver and is a marker of inflammation in the body. It was determined that these levels weren't unusual for someone experiencing a flare up like mine (infection wise).
+I went right to the hospital to get my blood drawn and the results came back clean right away. The only abnormality was that my c-reactive protein (CRP) levels were slightly elevated. This is a protein that is produced by the liver and is a marker of inflammation in the body. It was determined that these levels weren't unusual for someone experiencing a flare up like mine.
 
 ![high-crp](high-c-reactive.png)
 
@@ -146,13 +146,7 @@ All other blood work looked normal:
 
 > My full blood panel results from 10/06/2023
 
-The doctor *still* was suspicious so he continued with the hip aspiration with the goal of sampling fluid from inside my hip for any pathogens.
-
-The hip aspiration was one of the most painful things I have ever experienced. The proceeded started with my doctor saying that he "really had done these on the hip before". I was laid on a table and they injected tiny needles with local anesthetic into my hip before they inserted a much larger needle to draw out the fluid. The much larger needle was guided by x-ray imaging and I was told to stay completely still. First, the anesthetic had almost no effect and I could feel the needle going into my hip. I was biting my lip so much it began to bleed so I switch to biting my hand and cussing. The doctor was having a very difficult time getting fluid out and I was unable to stay still due to the pain. A nurse then gave me a self-administered tube of nitrous oxide to help with the pain. I began to huff nitrous like my life depended on it and before I knew it I was so high that sound began to become distorted. The doctor and the x-ray technician began to argue, the needle got stuck, and they had to start over from a new angle. The doctor was finally able to remove 6ccs of fluid from my right hip. I left the appointment, violently high on nitrous, and in a wheelchair.
-
-> If for some reason I ever need to get a hip aspiration again, I think I will skip it and take my $800 and spend it on medical grade nitrous oxide instead 😂. *0/10*
-
-The last of my results to come through was my MRI. It took a few days for the final report to come back as a third party radiologist had to review the images in Denver. The doctor called me from his personal cell phone after the office had closed to read the results to me.
+The last of my results to come through was my MRI (without contrast). It took a few hours for the final report to come back as a third party radiologist had to review the images in Denver. The doctor called me from his personal cell phone after the office had closed to read the results to me. This was all in the same day.
 
 **Doctor**: "The MRI came back and it looks like you have a labral tear in your right hip. We also see a large amount of inflammation in the joint and bone edema. The radiologist has also suggested that there is a mass and synovial inflammation that represents PVNS."
 
@@ -168,8 +162,68 @@ Being a generally anxious person (health wise) to begin with, I began franticall
 
 I felt alone.
 
+...
+
+The doctor *still* was suspicious so he continued with the hip aspiration with the goal of sampling fluid from inside my hip for any pathogens. The doctor also wanted me to get my blood drawn right before the procedure to do a comparison with the earlier blood draw.
+
+Here are the results from the second blood draw:
+
+![blood4](blood4.png)
+
+> The only metrics of interest was that my CRP levels had greatly decreased from the previous blood draw.
+
+The hip aspiration was one of the most painful things I have ever experienced. The proceeded started with my doctor saying that he "really had done these on the hip before". I was laid on a table and they injected tiny needles with local anesthetic into my hip before they inserted a much larger needle to draw out the fluid. The much larger needle was guided by x-ray imaging and I was told to stay completely still. First, the anesthetic had almost no effect and I could feel the needle going into my hip. I was biting my lip so much it began to bleed so I switch to biting my hand and cussing. The doctor was having a very difficult time getting fluid out and I was unable to stay still due to the pain. A nurse then gave me a self-administered tube of nitrous oxide to help with the pain. I began to huff nitrous like my life depended on it and before I knew it I was so high that sound began to become distorted. The doctor and the x-ray technician began to argue, the needle got stuck, and they had to start over from a new angle. The doctor was finally able to remove 6ccs of fluid from my right hip. I left the appointment, violently high on nitrous, and in a wheelchair.
+
+> If for some reason I ever need to get a hip aspiration again, I think I will skip it and take my $800 and spend it on medical grade nitrous oxide instead 😂. *0/10*
+
 ### Second Opinions
 
-Right away after being diagnosed, I knew that I needed to get more eyes on my results. If this disease is truly as rare as they say it is, then that also means that there has to be limited diagnostic experience with it as well. That means that its quite possible I have been misdiagnosed and I don't actually have PVNS/TGCT.
+Right after being diagnosed, I knew that I needed to get more eyes on my results. If this disease is truly as rare as they say it is, then that also means that there has to be limited diagnostic experience with it as well. That means its quite possible I have been misdiagnosed and I don't actually have PVNS/TGCT.
 
 > The chances of being stuck by lightning are [1 in 15,300](https://www.britannica.com/question/What-are-the-chances-of-being-struck-by-lightning#:~:text=The%20odds%20that%20one%20will,struck%20by%20lightning%20every%20year.) so surely I haven't developed a tumor with 39 in 1,000,000 odds, right?
+
+I first reached out to a family friend that recently retired from his career as an orthopedic surgeon. He reviewed my MRI report (not the actual images) and told me that it was very well written and did indeed make a strong case for TGCT.
+
+Here is the actual MRI report for reference:
+
+![first-mri-report-one](first-mri-1.png)
+![first-mri-report-two](first-mri-2.png)
+
+> My MRI report from 10/06/2023
+
+The doctor that our friend suggested I see right away was [Leslie B. Vidal](https://web.archive.org/web/20231210233324/https://www.thesteadmanclinic.com/our-doctors/leslie-b-vidal) with the Steadman Clinic in Vail, CO. This single suggestion would ultimately change the course of my entire treatment for the better.
+
+I didn't book an appointment right away though, I had an upcoming camping trip in Utah, and I also was on a mission to try and figure out as much about this disease as possible before I saw another doctor as my last experience was not great.
+
+### The Search for Information
+
+This was probably the longest, most stressful, and mentally taxing portion of my journey. I spent countless hours reading research papers, watching videos, and trying to understand the disease as best as I could. I was trying to understand the disease, the treatment options, and the potential outcomes. Throughout this whole process, I was sending my stress levels through the roof. I was constantly thinking about the worst-case scenarios and I was not able to sleep well at all. Along the way, I stumbled across the [TGCT/PVNS support group](https://www.facebook.com/groups/1587642278156786) on Facebook. I joined the group and began to read through hundreds of posts and comments from other members. I would read about their surgeries, folks taking new medicines that were in clinical trials, and I would read about their own process of getting diagnosed.
+
+In this support group, I noticied that there was one member who seemed highly active, and possessed a wealth of knowledge about the disease. Her name was Sydney Stern. I reached out to her via DMs and introduced myself, asked a few questions in regards to my situation, and asked why she was a member of the group. Reaching out to Sydney would be the very best decision I would make in my entire journey.
+
+Sydney was in a similar boat as me. She had been diagnosed with PVNS/TGCT of the hip and had been through multiple surgeries and treatments. She was diagnosed many years ago when the support systems, research, and treatment options were not as advanced as they are today. She had been through it all and had answers to nearly every question I could possibly think of. She is also in the medical field, has a PhD, and from what I can tell she pretty much runs the entire non-profit for TGCT. During our conversations online, she said I could send her my MRI images and she would take a look at them. I sent her the images and she was able to walk me through what the results were, why the radiologist was making a case for TGCT, and what the next steps should be.
+
+Here are the actual images she helped me to review from that initial MRI:
+
+![first-mri-img-1](first-mri-img-1.png)
+![first-mri-img-2](first-mri-img-2.png)
+
+> My MRI images from 10/06/2023 - The red arrows are pointing to areas of fluid / inflammation. The magenta arrow + circle is highlighting the area of the "suspicous" mass.
+
+Sydney was an absolutely **rock star** for me through this entire process to come!
+
+---
+
+So what was to happen next? I currently only had a referral to see Dr. Vidal in Vail, CO. I had a camping trip in Utah coming up, I was still waiting for my swelling to come down, and I had a lot of chats with Sydney regarding next steps. This process took a while and it was a journey through the trecherous waters of the US healthcare system. I will provide a high level overview of what all happened over the next few months in the *search-for-information*:
+
+1. I went into "active monitoring" mode for the next month (October 2023 - November 2023). During this time, I took ibuprofen to help with the pain and swelling. I kept it light on my leg with minimal activity, went on my camping trip in Utah while being very careful, and scheduled an appointment with Dr. Vidal in Vail, CO for mid-November.
+2. I had my in-person appointment with Dr. Vidal in Vail, CO. Her team was **absolutely fantastic** and incredibly thorough. She reviewed my MRI images, x-ray images (from June), and did a physical examination. She wanted me to get another MRI from the original MRI location. Her goal was to see if anything had changed since the last MRI, see if the mass was still present, and get a better idea of what was going on now that the swelling had subsided.
+3. I relayed the information to Sydney and she provided me with an excellent suggestion. She suggested that I request this second MRI to be done with contrast and a GRE sequence. This would provide the best possible images for a potential mass in the joint. I relayed this information to Dr. Vidal and she agreed that this was a good idea.
+4. I got the second MRI done with contrast and the GRE sequence. Before leaving the MRI appointment, I requested that the images were handed to me on a physical disk so that I could create mini videos of the images and send them to Syndey for review. (more to come on the results below)
+5. The MRI results were cross reviewed by Dr. Vidal and her team. They agreed with the results in the report (again, this will be discussed below).
+6. The MRI results were then cross reviewed by the *entire orthopedic oncology team* at CU Anschutz via a referral suggestion from a family member. This occured due to a failed attempt when trying to get an appointment with Bennie Lindeque who works in Orthopedic Oncology. Since I was unable to get an appointment without a biopsy, my MRI results were reviewed by the entire team during a monthly review meeting. Their review determined that there was "no signs of any tumor" and that I should just get a full hip replacement instead. This outcome proved to be entirely incorrect and I am very glad that I did not pursue any further advice from this team.
+7. It was now the holiday (December) and I had an upcoming trip to Europe for a month with my partner. I had put most of my medical stuff on hold and was going to pick it back up when I returned in February.
+
+> Quick side note: Why did I reach out to an orthopedic oncologist? Oncology means cancer right? No, not quite. Oncology is the study of tumors and cancer is a type of tumor. Orthopedic oncologists are the best doctors to see when you have a tumor in your bone or joint. Sydney suggested that I see an orthopedic oncologist because it would result in statistically better outcomes when compared to seeing a general orthopedic surgeon. This is because orthopedic oncologists are more familiar with the disease and have more experience with treating it.
+
+So what were the results of the second MRI? Well here they are:
