@@ -226,4 +226,43 @@ So what was to happen next? I currently only had a referral to see Dr. Vidal in 
 
 > Quick side note: Why did I reach out to an orthopedic oncologist? Oncology means cancer right? No, not quite. Oncology is the study of tumors and cancer is a type of tumor. Orthopedic oncologists are the best doctors to see when you have a tumor in your bone or joint. Sydney suggested that I see an orthopedic oncologist because it would result in statistically better outcomes when compared to seeing a general orthopedic surgeon. This is because orthopedic oncologists are more familiar with the disease and have more experience with treating it.
 
-So what were the results of the second MRI? Well here they are:
+So what were the results of the second MRI? Well here they are...
+
+### Second MRI Results
+
+I got the second MRI done during step #4 in the list seen above. This MRI took place on 11/15/2023, roughly one month after my first MRI.
+
+MRI Report:
+
+![second-mri-1](second-mri-1.png)
+
+> MRI report from 11/15/2023. Cross referencing the original MRI report.
+
+The notable findings from the MRI report were:
+
+- *Decreased joint effusion (fluid in the joint) and synovitis (inflammation of the synovium)*
+  - This was a good sign as it meant that the swelling had gone down.
+- *Labral separation appears unchanged*
+  - The labral tear that was found in the first MRI was still present and hasn't gotten worse
+- *Unchanged cam-type femoroacetabular impingement*
+  - The hip impingement was still present and hadn't gotten worse (bone on bone contact)
+- *1.3 x 1.7 x 0.6 cm low signal globular focus that appears suspicious for blood products in pigmented villonodular synovitis*
+  - This was the most important part of the report. The mass was still present and it still continued to show characteristics of PVNS (TGCT).
+
+MRI Images:
+
+![second-mri-img-1](second-mri-img-1.png)
+
+> Compared to my first MRI of this view (Cor T1 FS POST - unilateral) you can see the swelling has gone way down. However, there is still a suspicious area in the joint.
+
+![second-mri-img-2](second-mri-img-2.png)
+
+> In this view, (Ax T1 FS POST - unilateral) we see a very suspicious mass in the joint (magenta).
+
+![second-mri-img-3](second-mri-img-3.png)
+
+> In this view, (Ax T2* GRE) the mass is even more visible. Thanks GRE sequence with contrast and Sydney Stern!
+
+![second-mri-img-4](second-mri-img-4.png)
+
+> In this view, (Cor STIR - unilateral) you can see that some inflammation is still present in the joint but it has gone down significantly. Arrows are pointing to fluid / inflammation areas.
