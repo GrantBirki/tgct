@@ -232,7 +232,7 @@ So what were the results of the second MRI? Well here they are...
 
 I got the second MRI done during step #4 in the list seen above. This MRI took place on 11/15/2023, roughly one month after my first MRI.
 
-MRI Report:
+#### MRI Report
 
 ![second-mri-1](second-mri-1.png)
 
@@ -249,7 +249,7 @@ The notable findings from the MRI report were:
 - *1.3 x 1.7 x 0.6 cm low signal globular focus that appears suspicious for blood products in pigmented villonodular synovitis*
   - This was the most important part of the report. The mass was still present and it still continued to show characteristics of PVNS (TGCT).
 
-MRI Images:
+#### MRI Images
 
 ![second-mri-img-1](second-mri-img-1.png)
 
@@ -266,3 +266,9 @@ MRI Images:
 ![second-mri-img-4](second-mri-img-4.png)
 
 > In this view, (Cor STIR - unilateral) you can see that some inflammation is still present in the joint but it has gone down significantly. Arrows are pointing to fluid / inflammation areas.
+
+#### MRI Videos
+
+Here are a few video I made by scrolling through the MRI images:
+
+{{< video src="Sag T1 FS POST (unilateral)" height="189px" width="317px" autoplay="true" loop="true" muted="true" >}}
