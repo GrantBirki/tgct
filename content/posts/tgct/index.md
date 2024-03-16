@@ -272,3 +272,5 @@ The notable findings from the MRI report were:
 Here are a few video I made by scrolling through the MRI images:
 
 {{< video src="Sag T1 FS POST (unilateral)" height="189px" width="317px" autoplay="true" loop="true" muted="true" >}}
+
+> View: Sag T1 FS POST (unilateral)
