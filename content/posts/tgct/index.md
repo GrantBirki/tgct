@@ -286,3 +286,7 @@ Here are a few video I made by scrolling through the MRI images:
 {{< video src="Ax T2_ GRE" height="189px" width="317px" autoplay="true" loop="true" muted="true" >}}
 
 > View: Ax T2_ GRE
+
+### Making a Decision
+
+Looking back on that quick *search-for-information* timeline, I got my second MRI (the results just above) in mid-November 2023 - flash forward and now we are at the start of February 2024. I had just returned from my trip to Europe and had done a lot of walking while on my trip.
