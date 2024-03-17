@@ -369,15 +369,54 @@ While using the CPM machine, I would be doing calf pumps and quad squeezes to he
 
 The next two weeks were pretty boring overall but that is actually a good thing in this case. I was able to do some work from my laptop, watch a ton of movies, and spend a lot of time resting. I continued to have virtually no paid at all and was able to sleep through most nights without any issues. The next thing I knew, it would be two weeks out from surgery, and I would be active in physical therapy.
 
----
+#### Pathology Report
 
 During these first two weeks, I also got a call from Dr. Vidal to check-in on me and go over the surgery results and the biopsy.
 
 Overall, the surgery was incredibly successful. She was able to shave down the bone causing my hip impingment, fix the labral tear, and fully remove the mass. Fortunately, the mass had very clear boundries an she was able to "pluck" it out in one piece. She then cauterized the area it was attached to to prevent any future growth. The mass was sent to pathology and the results came back as expected. I did indeed have TGCT (PVNS) in the nodular form. All things considered, this was actually great news. The mass was a benign tumor, it was fully removed, and it was removed in a way that would make it very unlikely to return.
 
-Here is the full pathology report:
-
 ![pathology-1](pathology-1.png)
 ![pathology-2](pathology-2.png)
 
 > Post surgery pathology report
+
+### Long Term Recovery
+
+I'm currently writing this almost 3 weeks out from my surgery. I'm still being cautious on crutches and I'm starting to begin weight bearing on my right leg. So far the process has been a breeze and I'm feeling great! Still no pain at all which has amazed me and also my surgery team. Yesterday I went to an outdoor concert, and out to happy hour with some of my family. I was using crutches but just to be able to get out and about so soon after surgery was amazing.
+
+My hip actually feels so much better than it did before surgery. I'm quite optimistic that my hip will actually be better than it was before my journey with TGCT started. My hip impingement is gone, the labral tear is fixed, and the mass is gone.
+
+Of course there is always a risk of the mass returning, but that risk is very low. In fact, Dr. Vidal said that the operation went so well that the risk of recurrence is less than 5%. I will still need to be monitored with occasional MRIs, but it's not something I'm going to worry about. Instead, I'm going to be worrying about how I'm every going to fit in all the activities I want to do now that I'm going to be pain free and back to an even better self!
+
+> I will be updating this section as I continue to recover if anything changes. If you don't see any updates, then that means I have nothing interesting to report 😉
+
+### Conclusion
+
+TGCT is a rare, unique, and special club that *nobody* wants to be a part of. Despite that, I am so incredibly grateful that this club contains a truly outstanding member, Sydney Stern. I would like to think of my experience with TGCT as a success story... a success story that has been a decade in the making through the dedication, expertise, and obstaces that many others have faced before me.
+
+*The people before me with TGCT ~~walked~~ limped so that I could run...*
+
+My experience with TGCT began and ended in less than a year. For the majority of those diagnosed with TGCT, this would be a dream come true. I am incredibly fortunate to have had access to resources such as [tgctsupport](https://www.tgctsupport.org/), the expertise of world-class surgeons like Dr. Vidal, the guidance of brilliant individuals in the field like Sydney Stern, and the unwavering support of my family, especially Leah.
+
+I hope that my story can be found by others who are going through the ups and downs of finding out they have TGCT. I hope that my story can provide some sort of comfort and guidance to those who are unsure about what lies ahead of them in the journey with TGCT.
+
+— Grant
+
+### Acknowledgements and References
+
+- [tgctsupport.org](https://www.tgctsupport.org/) - Life Raft Group 501 (c)(3) non-profit organization
+- [NORD](https://rarediseases.org/rare-diseases/tenosynovial-giant-cell-tumor/) - National Organization for Rare Disorders
+- [TGCT/PVNS support group](https://www.facebook.com/groups/1587642278156786)
+- [The Steadman Clinic](https://web.archive.org/web/20240227022554/https://www.thesteadmanclinic.com/)
+- Sydney Stern 🙇
+
+### Open Source Data
+
+In an effort to help others with TGCT, the medical community, and researchers, I have decided to make my medical records and images related to TGCT open source. All of this data is available in the [`data/`](https://github.com/GrantBirki/tgct/tree/main/data) directory of this repository on GitHub. These documents are placed under the [MIT](https://opensource.org/license/mit) license and are free to use.
+
+These documents include:
+
+- MRI images
+- X-Ray images
+- Pathology reports
+- Blood work
