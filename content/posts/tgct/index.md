@@ -351,4 +351,33 @@ The recovery in the hospital was an incredibly smooth process. In fact, my only 
 
 I was discharged from the hospital around 3:00pm and we drove back to Steamboat Springs, CO. I was able to sit in the car just fine for the hour and a half drive and still had no pain. I was feeling great and mainly just tired.
 
+---
 
+For the first few days, I was very dependent on my partner (Leah), to help me with pretty much all basic tasks. I needed help making food, getting dressed, and getting out of bed. Some of these tasks like getting out of bed, could have potentially been done on my own, but it was highly recommended to have a helper to avoid potential injury. I was on crutches and was not allowed to put any weight on my right leg. I was also wearing a hip brace that would prevent my leg from moving in certain directions - external rotation, or past 90 degrees of flexion.
+
+I still had no pain, and was not taking any opioids/narcotics. I was on a rotating schedule of acetaminophen, ibuprofen, and aspirin. The aspirin was to help prevent blood clots since I was spending most of my time laying down. I only had to take a total of 2 doses of opioids and it was due to my heel hurting from the traction boot. I could have done without the opioids, but I really just wanted to get good sleep and not think about my throbbing heel.
+
+For my diet, I was eating a lot of granola, yogurt, and fruit. I was also drinking a ton of water and supplementing with Ensure drinks. Avoiding large meals was important for me to prevent indigestion since I was laying down most of the time.
+
+After my surgery, I was also sent home with a [continuous passive motion](https://en.wikipedia.org/wiki/Continuous_passive_motion) (CPM) machine. This machine would move my leg up and down to help prevent scar tissue and muscle stiffness. I would spend about 4-6 hours a day in this machine and I started using it the very next day after surgery. The CPM machine would only be required for the first three weeks after surgery.
+
+![cpm](cpm.jpg)
+
+> Me using the CPM machine the day after surgery.
+
+While using the CPM machine, I would be doing calf pumps and quad squeezes to help with blood flow and to help keep my toes warm.
+
+The next two weeks were pretty boring overall but that is actually a good thing in this case. I was able to do some work from my laptop, watch a ton of movies, and spend a lot of time resting. I continued to have virtually no paid at all and was able to sleep through most nights without any issues. The next thing I knew, it would be two weeks out from surgery, and I would be active in physical therapy.
+
+---
+
+During these first two weeks, I also got a call from Dr. Vidal to check-in on me and go over the surgery results and the biopsy.
+
+Overall, the surgery was incredibly successful. She was able to shave down the bone causing my hip impingment, fix the labral tear, and fully remove the mass. Fortunately, the mass had very clear boundries an she was able to "pluck" it out in one piece. She then cauterized the area it was attached to to prevent any future growth. The mass was sent to pathology and the results came back as expected. I did indeed have TGCT (PVNS) in the nodular form. All things considered, this was actually great news. The mass was a benign tumor, it was fully removed, and it was removed in a way that would make it very unlikely to return.
+
+Here is the full pathology report:
+
+![pathology-1](pathology-1.png)
+![pathology-2](pathology-2.png)
+
+> Post surgery pathology report
