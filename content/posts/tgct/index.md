@@ -87,7 +87,7 @@ The hip x-ray came back clean, so it was assumed that I had a muscle injury.
 
 ![Hip X-Ray](hip-xray.png)
 
-> Right hip x-ray taken on 06/27/2023
+> Right hip x-ray taken on `06/27/2023`
 
 The pain would persist for nearly three weeks. I truly cannot stress enough how bad this flare up was. During that three week period, my grandmother passed away. My entire family flew to the funeral and I was one of the only members that did not attend because I physically could not walk, sit, or even sleep. It was a rough time 😬.
 
@@ -144,7 +144,7 @@ All other blood work looked normal:
 ![blood2](blood2.png)
 ![blood3](blood3.png)
 
-> My full blood panel results from 10/06/2023
+> My full blood panel results from `10/06/2023`
 
 The last of my results to come through was my MRI (without contrast). It took a few hours for the final report to come back as a third party radiologist had to review the images in Denver. The doctor called me from his personal cell phone after the office had closed to read the results to me. This was all in the same day.
 
@@ -193,7 +193,7 @@ Here is the actual MRI report for reference:
 ![first-mri-report-one](first-mri-1.png)
 ![first-mri-report-two](first-mri-2.png)
 
-> My MRI report from 10/06/2023
+> My MRI report from `10/06/2023`
 
 The doctor that our friend suggested I see right away was [Leslie B. Vidal](https://web.archive.org/web/20231210233324/https://www.thesteadmanclinic.com/our-doctors/leslie-b-vidal) with the Steadman Clinic in Vail, CO. This single suggestion would ultimately change the course of my entire treatment for the better.
 
@@ -212,7 +212,7 @@ Here are the actual images she helped me to review from that initial MRI:
 ![first-mri-img-1](first-mri-img-1.png)
 ![first-mri-img-2](first-mri-img-2.png)
 
-> My MRI images from 10/06/2023 - The red arrows are pointing to areas of fluid / inflammation. The magenta arrow + circle is highlighting the area of the "suspicous" mass.
+> My MRI images from `10/06/2023` - The red arrows are pointing to areas of fluid / inflammation. The magenta arrow + circle is highlighting the area of the "suspicous" mass.
 
 Sydney was an absolutely **rock star** for me through this entire process to come!
 
@@ -240,7 +240,7 @@ I got the second MRI done during step #4 in the list seen above. This MRI took p
 
 ![second-mri-1](second-mri-1.png)
 
-> MRI report from 11/15/2023. Cross referencing the original MRI report.
+> MRI report from `11/15/2023`. Cross referencing the original MRI report.
 
 The notable findings from the MRI report were:
 
@@ -289,4 +289,66 @@ Here are a few video I made by scrolling through the MRI images:
 
 ### Making a Decision
 
-Looking back on that quick *search-for-information* timeline, I got my second MRI (the results just above) in mid-November 2023 - flash forward and now we are at the start of February 2024. I had just returned from my trip to Europe and had done a lot of walking while on my trip.
+Looking back on that quick *search-for-information* timeline, I got my second MRI (the results just above) in mid-November 2023 - flash forward and now we are at the start of February 2024. I had just returned from my trip to Europe and had done a lot of walking while on my trip. Throughout the whole trip, I was keeping it very mellow but I still noticed that my hip was getting worse. Some days I had a bit of a limp, some days I was extra sore, and some days I just had an overall feeling of discomfort. We spent some time in Sweden and I had to sit back on a lot of activities because of the risk of having another flare up while abroad. I wasn't able to go ice skating, cross country skiing, or even basic hikes.
+
+I wasn't able to be myself and at 26 I felt like I was being held back.
+
+My mind was made up. I was going to get this problem fixed and get back to all the fun activities I love to do.
+
+I scheduled an appointment with Dr. Vidal in Vail, CO for mid-February 2024. During this appointment, she performed another physical exam and discussed treatment options. I still had a very symptomatic hip when testing for the impingement/labral tear, and I was also in discomfort for the mass. There was really only two options at this point:
+
+1. **Anti-inflammatory Medications**: A very conservative approach that would involve taking anti-inflammatory medications daily (and indefinitely) to manage the symptoms. I would also not be able to do any high impact activities.
+2. **Hip Arthroscopy**: This would be a minimally invasive surgery where they would go in and fix the labral tear, shave down the bone to fix the impingement (cam-type), and remove the mass.
+
+There was no question as to what I was going to do. I was going to get the [hip arthroscopy](https://en.wikipedia.org/wiki/Hip_arthroscopy).
+
+Before leaving the appointment, Dr. Vidal had me get one last MRI that afternoon at their clinic. This MRI has nearly double the resolution of the previous MRI and would be used to plan the surgery.
+
+> Due to this MRI being double the resolution, it wasn't even required to get it done with contrast or a GRE sequence.
+
+The third MRI did not show anything new or noteworthy. It was just used to plan the surgery and to make sure that there was nothing else going on in the joint that would be a suprise during the surgery.
+
+### Surgery
+
+The surgery was scheduled for `03/01/2024` - approximately 2 weeks after my appointment with Dr. Vidal.
+
+Leading up to the surgery, I did a considerable amount of stretching and exercises to prepare for the recovery. I wanted to ensure that I would have the best possible outcome and that I would be able to recover as quickly as possible.
+
+Here is a list of the exercises I did (ceased ~3 days before surgery):
+
+- Hip Flexor Stretches
+- Hamstring Stretches
+- Calf Stretches
+- Glute Stretches
+- Quad Stretches
+- 3 miles of stationary biking per day
+- Full upper body workout (chest, back, shoulders, arms) - one group per day, daily
+- Core exercises (planks, leg raises, hollow crunches, etc.)
+
+I also made sure to eat a very healthy diet and to get plenty of sleep leading up to the surgery.
+
+The day before surgery, my partner and I drove to Vail, CO and stayed in a hotel. We had to be at the hospital at 6:00am the next day.
+
+The check-in and pre-op process was very smooth. I filled out some forms, got changed into a hospital gown, and then was taken to a pre-op room. I met with the anesthesiologist and Dr. Vidal before the surgery. They both went over the procedure and what to expect. I was given a muscle relaxer, and an opioid to get the pain management under control before the surgery even started. Compression socks were put on my legs to prevent blood clots and an IV was started with saline. The anesthesiologist explained to me that I would be put under [general anesthesia](https://en.wikipedia.org/wiki/General_anaesthesia) and a breathing tube would be inserted to help me breathe during the surgery. I was also given a nerve block in my hip to help with the pain after the surgery. Lastly, he explained that I would be given a medication that would fully paralyze me during the surgery to prevent any movement that could cause injury.
+
+Dr. Vidal came in and marked my hip with a sharpie and explained that she would expect the surgery to take 2-3 hours to my partner. During the surgery I would have [intermittent pneumatic compression](https://en.wikipedia.org/wiki/Intermittent_pneumatic_compression) socks on my legs. These socks would inflate and deflate to help with blood flow and to prevent blood clots in my legs as a precaution. My right leg would also be tightened into a [traction boot](https://github.com/GrantBirki/tgct/assets/23362539/7eeaf555-ca7b-439c-a894-8b9404a4dbd6) which would aid in slightly distracting the hip joint to make the surgery easier. I would also be given a very large dose of antibiotics via my IV as another precaution to prevent infection from the surgery.
+
+> Side note: Yes all the information about what would take place during the surgery sounds scary. As this information was being explained to me, my heart rate was increasing, I was having cold sweats, and felt like I wanted to run out of the pre-op room. I told the pre-op nurse that I was feeling this way and she told me that if I wasn't anxious then I wouldn't be normal. It was only until after I woke up from the surgery that I would realize that I had nothing to worry about.
+
+At this point, I was ready to "rock and roll" for surgery. Dr. Vidal stepped out of the room to get scrubbed in and the anesthesiologist placed a tube near my nose with funny smelling gas. I asked him if it was nitrous oxide and he said "no, its something wayyy better". I blacked out within seconds and the next this I knew, I was waking up in the recovery room.
+
+### Recovery
+
+Like all surgeries, the first part of recovery starts in the post anesthesia care unit (PACU). This is where they monitor you as you wake up from general anesthesia. Some people can have a hard time waking up from general anesthesia or feel nasueous. I did not have any issues, so they moved my groggy self to a recovery room. As I was starting to wake up, the nurse explained to me that she was going to give me a dose of pain medication "just in case" (I had no pain). I asked what she was going to give me and she said "fentanyl". Moments later I went *night-night* and woke up about an hour later. I was still groggy, and now also high as a kite from the fentanyl. I remember really wanting to eat jello so I slurpped down a few cups and had apple juice. I told the nurse how happy the jello made me and she asked if I wanted to see my partner now. I said "yes" so she sent in Leah to be with me.
+
+![recovery](recovery.jpg)
+
+The recovery in the hospital was an incredibly smooth process. In fact, my only complaint was that it took too long and I wished I could have gone home even earlier! I had no pain, didn't require any additional medicaition, wasn't nauseous, and nothing was numb. I was able to walk around on crutches okay (required to do so before being discharged) and I was able to urinate. In fact, I was able to urinate **a lot**.
+
+![jug](jug.jpg)
+
+> I filled an entire bottle and actually had to stop peeing because it filled up. Sorry if that's TMI, but that was just absurd.
+
+I was discharged from the hospital around 3:00pm and we drove back to Steamboat Springs, CO. I was able to sit in the car just fine for the hour and a half drive and still had no pain. I was feeling great and mainly just tired.
+
+
