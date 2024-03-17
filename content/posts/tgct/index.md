@@ -65,6 +65,71 @@ The short version, is that TGCT is a very rare form of a benign tumor that grows
 
 This section is mainly included to add some base context around TGCT. In fact, it was some of the early information I first came across when diagnosed. There is a lot more depth to TGCT and I will be sharing more about my experience further down the page.
 
+### About Me
+
+While TGCT can occur randomly and affect anyone, I think it still might be useful to know a bit more about me.
+
+#### Demographics
+
+- **Age**: 26
+- **Gender**: Male
+- **Gender Identity**: Cisgender
+- **Sexual Orientation**: Heterosexual
+- **Race**: White
+- **Ethnicity**: Non-Hispanic
+- **Locations**: Multiple
+  - **Birth**: Beaver Dam, WI
+  - **Childhood**: Steamboat Springs, CO
+  - **Adulthood**: Fort Collins, CO / Seattle, WA / Boulder, CO / London, UK
+- **Occupation**: Senior Security/Software Engineer
+- **Education**: 1.5 years at University (CSU + UW)
+- **Relationship Status**: In a long-term relationship
+- **Children**: None
+
+#### Health
+
+- **Pre-Existing Conditions**: None (other than the hip impingement to be found in this process)
+- **Allergies**: Quite allergic to ragweed family (sagebrush, etc.)
+- **Medications**: None at the time of diagnosis, but I was taking sertraline (Zoloft) for anxiety at 20mg daily. Stopped about 1 month before my official diagnosis.
+- **Diet**: No dietary restrictions, I eat a balanced and healthy diet
+- **Exercise**: Significant
+  - Regularly going to the gym 4-5 days a week for the last year
+  - Rock climbing 1-2 times a week for the last year
+  - Hiking, biking, skiing, running, snowshoeing, cross country skiing, ice climbing, etc.
+- **Mental Health**: I have been diagnosed with anxiety and was prescribed sertraline (Zoloft) at 20mg daily. I took this medication daily for about 2 years before I stopped because I felt much better
+- **Smoking**: Non-smoker
+- **Alcohol**: Rarely drink, maybe 1-3 times a month - concerts, events, etc.
+
+#### Personal Life
+
+My family moved to Steamboat Springs, CO (where they still reside) when I was three years old. I grew up highly active in the mountains. I was skiing by age three and grew up on the ski slopes in the winter, and on hiking trails in the summer. Despite being very active and growing up in a small mountain town, I was also a huge nerd. When I wasn't outside playing in the mountains, I was inside playing video games and tinkering with computers. I fell in love with technology in my teenage years and that ultimately drove me into the field of software and cybersecurity in my young adult life.
+
+I also have a long-term partner who introduced me to the world of travel. Between the two of us, we have traveled to an almost absurd number of countries for only being 26 years old (at the time of writing). We have been all over Europe, Taiwan, Central/South America, Scandinavia, the Mediterranean, North Africa,West Africa, the Carribean, Iceland, Canada, and even lived in London for a year. The full list is [here](https://github.com/GrantBirki/gl/blob/da43aef1e92d5efca89f905df109bd2e918a36f1/src/config/components/map.json) and ever growing at this point.
+
+Here are some shots of me doing all sorts of things:
+
+![ice-climbing](ice-climbing.jpg)
+
+> Ice climbing in Ouray, CO
+
+![morocco](morocco.jpg)
+
+> Riding camels in the Sahara Desert, Morocco
+
+![the-maze](the-maze.jpg)
+
+> Returning from the Maze District in Canyonlands National Park, UT
+
+![uk](uk.jpg)
+
+> Living in the United Kingdom
+
+![utah](utah.jpg)
+
+> Hiking in the Firey Furnace, Arches National Park, UT (one week before my surgery 🙈)
+
+---
+
 *Now, let's get into my story...*
 
 ### First Symptoms
