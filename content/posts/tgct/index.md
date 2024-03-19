@@ -4,7 +4,7 @@ author: ["Grant Birkinbine"] # can be an array or just a string
 description: "My experience being diagnosed, living with, and overcoming TGCT."
 
 # The summary is for search engines
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+summary: My full experience with being diagnosed, living with, and overcoming TGCT. I hope my story can provide some comfort and guidance to those who are struggling with TGCT. This story is also a highly detailed report containing MRI images, medical documents, and other resources that are directly from my TGCT journey.
 
 date: 2024-03-13T00:00:00-00:00 # date of creation
 
@@ -104,7 +104,7 @@ While TGCT can occur randomly and affect anyone, I think it still might be usefu
 
 My family moved to Steamboat Springs, CO (where they still reside) when I was three years old. I grew up highly active in the mountains. I was skiing by age three and grew up on the ski slopes in the winter, and on hiking trails in the summer. Despite being very active and growing up in a small mountain town, I was also a huge nerd. When I wasn't outside playing in the mountains, I was inside playing video games and tinkering with computers. I fell in love with technology in my teenage years and that ultimately drove me into the field of software and cybersecurity in my young adult life.
 
-I also have a long-term partner who introduced me to the world of travel. Between the two of us, we have traveled to an almost absurd number of countries for only being 26 years old (at the time of writing). We have been all over Europe, Taiwan, Central/South America, Scandinavia, the Mediterranean, North Africa,West Africa, the Carribean, Iceland, Canada, and even lived in London for a year. The full list is [here](https://github.com/GrantBirki/gl/blob/da43aef1e92d5efca89f905df109bd2e918a36f1/src/config/components/map.json) and ever growing at this point.
+I also have a long-term partner who introduced me to the world of travel. Between the two of us, we have traveled to an almost absurd number of countries for only being 26 years old (at the time of writing). We have been all over Europe, Taiwan, Central/South America, Scandinavia, the Mediterranean, North Africa,West Africa, the Caribbean, Iceland, Canada, and even lived in London for a year. The full list is [here](https://github.com/GrantBirki/gl/blob/da43aef1e92d5efca89f905df109bd2e918a36f1/src/config/components/map.json) and ever growing at this point.
 
 Here are some shots of me doing all sorts of things:
 
@@ -126,7 +126,7 @@ Here are some shots of me doing all sorts of things:
 
 ![utah](utah.jpg)
 
-> Hiking in the Firey Furnace, Arches National Park, UT (one week before my surgery 🙈)
+> Hiking in the Fiery Furnace, Arches National Park, UT (one week before my surgery 🙈)
 
 ---
 
@@ -142,11 +142,11 @@ I managed to fall back asleep after taking pain medication and as soon as the su
 
 At the urgent care, they did a physical exam and the doctor told me that I had a pulled muscle. He had a physical therapist in mind for me to see that also happened to be down the street from my apartment so I was handed a business card. I was told to take it easy and to come back if the pain persisted.
 
-The pain did persit. In fact it was so bad that I couldn't walk or sleep for days. I called my partner in London one night at 4am and told her that I was on the edge of mental breakdown after not being able to sleep for three days straight. I would later come to learn that I was in the middle of a "flare up" and this flare up would be the worst one I would experience.
+The pain did persist. In fact it was so bad that I couldn't walk or sleep for days. I called my partner in London one night at 4am and told her that I was on the edge of mental breakdown after not being able to sleep for three days straight. I would later come to learn that I was in the middle of a "flare up" and this flare up would be the worst one I would experience.
 
 Over the next few weeks, I would see the physical therapist that was referred to me. He provided me with some exercises to do and some stretches to help with the pain. He also applied a steroid patch that had some form of magnets in it that helped push the steroid into my hip area. I have no idea if this is effective or not, but I was willing to try anything at that point. He also used an ultrasound machine that applied heat in the area. At the time I had no idea that I had TGCT and was blissfully unaware that I was being treated for the wrong thing.
 
-My physical therpist thought that I had partially torn my [psoas](https://en.wikipedia.org/wiki/Psoas_major_muscle) muscle when working out. The psoas does wrap around the hip and can cause pain in the area so in theory it made sense. However, the symptoms I was experiencing were rather concerning for my PT so he ordered an x-ray to ensure that there was no bone damage to my hip.
+My physical therapist thought that I had partially torn my [psoas](https://en.wikipedia.org/wiki/Psoas_major_muscle) muscle when working out. The psoas does wrap around the hip and can cause pain in the area so in theory it made sense. However, the symptoms I was experiencing were rather concerning for my PT so he ordered an x-ray to ensure that there was no bone damage to my hip.
 
 The hip x-ray came back clean, so it was assumed that I had a muscle injury.
 
@@ -268,7 +268,7 @@ I didn't book an appointment right away though, I had an upcoming camping trip i
 
 This was probably the longest, most stressful, and mentally taxing portion of my journey. I spent countless hours reading research papers, watching videos, and trying to understand the disease as best as I could. I was trying to understand the disease, the treatment options, and the potential outcomes. Throughout this whole process, I was sending my stress levels through the roof. I was constantly thinking about the worst-case scenarios and I was not able to sleep well at all. Along the way, I stumbled across the [TGCT/PVNS support group](https://www.facebook.com/groups/1587642278156786) on Facebook. I joined the group and began to read through hundreds of posts and comments from other members. I would read about their surgeries, folks taking new medicines that were in clinical trials, and I would read about their own process of getting diagnosed.
 
-In this support group, I noticied that there was one member who seemed highly active, and possessed a wealth of knowledge about the disease. Her name was Sydney Stern. I reached out to her via DMs and introduced myself, asked a few questions in regards to my situation, and asked why she was a member of the group. Reaching out to Sydney would be the very best decision I would make in my entire journey.
+In this support group, I noticed that there was one member who seemed highly active, and possessed a wealth of knowledge about the disease. Her name was Sydney Stern. I reached out to her via DMs and introduced myself, asked a few questions in regards to my situation, and asked why she was a member of the group. Reaching out to Sydney would be the very best decision I would make in my entire journey.
 
 Sydney was in a similar boat as me. She had been diagnosed with PVNS/TGCT of the hip and had been through multiple surgeries and treatments. She was diagnosed many years ago when the support systems, research, and treatment options were not as advanced as they are today. She had been through it all and had answers to nearly every question I could possibly think of. She is also in the medical field, has a PhD, and from what I can tell she pretty much runs the entire non-profit for TGCT. During our conversations online, she said I could send her my MRI images and she would take a look at them. I sent her the images and she was able to walk me through what the results were, why the radiologist was making a case for TGCT, and what the next steps should be.
 
@@ -277,20 +277,20 @@ Here are the actual images she helped me to review from that initial MRI:
 ![first-mri-img-1](first-mri-img-1.png)
 ![first-mri-img-2](first-mri-img-2.png)
 
-> My MRI images from `10/06/2023` - The red arrows are pointing to areas of fluid / inflammation. The magenta arrow + circle is highlighting the area of the "suspicous" mass.
+> My MRI images from `10/06/2023` - The red arrows are pointing to areas of fluid / inflammation. The magenta arrow + circle is highlighting the area of the "suspicious" mass.
 
 Sydney was an absolutely **rock star** for me through this entire process to come!
 
 ---
 
-So what was to happen next? I currently only had a referral to see Dr. Vidal in Vail, CO. I had a camping trip in Utah coming up, I was still waiting for my swelling to come down, and I had a lot of chats with Sydney regarding next steps. This process took a while and it was a journey through the trecherous waters of the US healthcare system. I will provide a high level overview of what all happened over the next few months in the *search-for-information*:
+So what was to happen next? I currently only had a referral to see Dr. Vidal in Vail, CO. I had a camping trip in Utah coming up, I was still waiting for my swelling to come down, and I had a lot of chats with Sydney regarding next steps. This process took a while and it was a journey through the treacherous waters of the US healthcare system. I will provide a high level overview of what all happened over the next few months in the *search-for-information*:
 
 1. I went into "active monitoring" mode for the next month (October 2023 - November 2023). During this time, I took ibuprofen to help with the pain and swelling. I kept it light on my leg with minimal activity, went on my camping trip in Utah while being very careful, and scheduled an appointment with Dr. Vidal in Vail, CO for mid-November.
 2. I had my in-person appointment with Dr. Vidal in Vail, CO. Her team was **absolutely fantastic** and incredibly thorough. She reviewed my MRI images, x-ray images (from June), and did a physical examination. She wanted me to get another MRI from the original MRI location. Her goal was to see if anything had changed since the last MRI, see if the mass was still present, and get a better idea of what was going on now that the swelling had subsided.
 3. I relayed the information to Sydney and she provided me with an excellent suggestion. She suggested that I request this second MRI to be done with contrast and a GRE sequence. This would provide the best possible images for a potential mass in the joint. I relayed this information to Dr. Vidal and she agreed that this was a good idea.
-4. I got the second MRI done with contrast and the GRE sequence. Before leaving the MRI appointment, I requested that the images were handed to me on a physical disk so that I could create mini videos of the images and send them to Syndey for review. (more to come on the results below)
+4. I got the second MRI done with contrast and the GRE sequence. Before leaving the MRI appointment, I requested that the images were handed to me on a physical disk so that I could create mini videos of the images and send them to Sydney for review. (more to come on the results below)
 5. The MRI results were cross reviewed by Dr. Vidal and her team. They agreed with the results in the report (again, this will be discussed below).
-6. The MRI results were then cross reviewed by the *entire orthopedic oncology team* at CU Anschutz via a referral suggestion from a family member. This occured due to a failed attempt when trying to get an appointment with Bennie Lindeque who works in Orthopedic Oncology. Since I was unable to get an appointment without a biopsy, my MRI results were reviewed by the entire team during a monthly review meeting. Their review determined that there was "no signs of any tumor" and that I should just get a full hip replacement instead. This outcome proved to be entirely incorrect and I am very glad that I did not pursue any further advice from this team.
+6. The MRI results were then cross reviewed by the *entire orthopedic oncology team* at CU Anschutz via a referral suggestion from a family member. This occurred due to a failed attempt when trying to get an appointment with Bennie Lindeque who works in Orthopedic Oncology. Since I was unable to get an appointment without a biopsy, my MRI results were reviewed by the entire team during a monthly review meeting. Their review determined that there was "no signs of any tumor" and that I should just get a full hip replacement instead. This outcome proved to be entirely incorrect and I am very glad that I did not pursue any further advice from this team.
 7. It was now the holiday (December) and I had an upcoming trip to Europe for a month with my partner. I had put most of my medical stuff on hold and was going to pick it back up when I returned in February.
 
 > Quick side note: Why did I reach out to an orthopedic oncologist? Oncology means cancer right? No, not quite. Oncology is the study of tumors and cancer is a type of tumor. Orthopedic oncologists are the best doctors to see when you have a tumor in your bone or joint. Sydney suggested that I see an orthopedic oncologist because it would result in statistically better outcomes when compared to seeing a general orthopedic surgeon. This is because orthopedic oncologists are more familiar with the disease and have more experience with treating it.
@@ -371,7 +371,7 @@ Before leaving the appointment, Dr. Vidal had me get one last MRI that afternoon
 
 > Due to this MRI being double the resolution, it wasn't even required to get it done with contrast or a GRE sequence.
 
-The third MRI did not show anything new or noteworthy. It was just used to plan the surgery and to make sure that there was nothing else going on in the joint that would be a suprise during the surgery.
+The third MRI did not show anything new or noteworthy. It was just used to plan the surgery and to make sure that there was nothing else going on in the joint that would be a surprise during the surgery.
 
 ### Surgery
 
@@ -404,11 +404,11 @@ At this point, I was ready to "rock and roll" for surgery. Dr. Vidal stepped out
 
 ### Recovery
 
-Like all surgeries, the first part of recovery starts in the post anesthesia care unit (PACU). This is where they monitor you as you wake up from general anesthesia. Some people can have a hard time waking up from general anesthesia or feel nasueous. I did not have any issues, so they moved my groggy self to a recovery room. As I was starting to wake up, the nurse explained to me that she was going to give me a dose of pain medication "just in case" (I had no pain). I asked what she was going to give me and she said "fentanyl". Moments later I went *night-night* and woke up about an hour later. I was still groggy, and now also high as a kite from the fentanyl. I remember really wanting to eat jello so I slurpped down a few cups and had apple juice. I told the nurse how happy the jello made me and she asked if I wanted to see my partner now. I said "yes" so she sent in Leah to be with me.
+Like all surgeries, the first part of recovery starts in the post anesthesia care unit (PACU). This is where they monitor you as you wake up from general anesthesia. Some people can have a hard time waking up from general anesthesia or feel nauseous. I did not have any issues, so they moved my groggy self to a recovery room. As I was starting to wake up, the nurse explained to me that she was going to give me a dose of pain medication "just in case" (I had no pain). I asked what she was going to give me and she said "fentanyl". Moments later I went *night-night* and woke up about an hour later. I was still groggy, and now also high as a kite from the fentanyl. I remember really wanting to eat jello so I slurped down a few cups and had apple juice. I told the nurse how happy the jello made me and she asked if I wanted to see my partner now. I said "yes" so she sent in Leah to be with me.
 
 ![recovery](recovery.jpg)
 
-The recovery in the hospital was an incredibly smooth process. In fact, my only complaint was that it took too long and I wished I could have gone home even earlier! I had no pain, didn't require any additional medicaition, wasn't nauseous, and nothing was numb. I was able to walk around on crutches okay (required to do so before being discharged) and I was able to urinate. In fact, I was able to urinate **a lot**.
+The recovery in the hospital was an incredibly smooth process. In fact, my only complaint was that it took too long and I wished I could have gone home even earlier! I had no pain, didn't require any additional medication, wasn't nauseous, and nothing was numb. I was able to walk around on crutches okay (required to do so before being discharged) and I was able to urinate. In fact, I was able to urinate **a lot**.
 
 ![jug](jug.jpg)
 
@@ -438,7 +438,7 @@ The next two weeks were pretty boring overall but that is actually a good thing 
 
 During these first two weeks, I also got a call from Dr. Vidal to check-in on me and go over the surgery results and the biopsy.
 
-Overall, the surgery was incredibly successful. She was able to shave down the bone causing my hip impingment, fix the labral tear, and fully remove the mass. Fortunately, the mass had very clear boundries an she was able to "pluck" it out in one piece. She then cauterized the area it was attached to to prevent any future growth. The mass was sent to pathology and the results came back as expected. I did indeed have TGCT (PVNS) in the nodular form. All things considered, this was actually great news. The mass was a benign tumor, it was fully removed, and it was removed in a way that would make it very unlikely to return.
+Overall, the surgery was incredibly successful. She was able to shave down the bone causing my hip impingement, fix the labral tear, and fully remove the mass. Fortunately, the mass had very clear boundaries an she was able to "pluck" it out in one piece. She then cauterized the area it was attached to to prevent any future growth. The mass was sent to pathology and the results came back as expected. I did indeed have TGCT (PVNS) in the nodular form. All things considered, this was actually great news. The mass was a benign tumor, it was fully removed, and it was removed in a way that would make it very unlikely to return.
 
 ![pathology-1](pathology-1.png)
 ![pathology-2](pathology-2.png)
@@ -457,7 +457,7 @@ Of course there is always a risk of the mass returning, but that risk is very lo
 
 ### Conclusion
 
-TGCT is a rare, unique, and special club that *nobody* wants to be a part of. Despite that, I am so incredibly grateful that this club contains a truly outstanding member, Sydney Stern. I would like to think of my experience with TGCT as a success story... a success story that has been a decade in the making through the dedication, expertise, and obstaces that many others have faced before me.
+TGCT is a rare, unique, and special club that *nobody* wants to be a part of. Despite that, I am so incredibly grateful that this club contains a truly outstanding member, Sydney Stern. I would like to think of my experience with TGCT as a success story... a success story that has been a decade in the making through the dedication, expertise, and obstacles that many others have faced before me.
 
 *The people before me with TGCT ~~walked~~ limped so that I could run...*
 
