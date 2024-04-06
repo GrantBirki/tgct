@@ -453,6 +453,37 @@ My hip actually feels so much better than it did before surgery. I'm quite optim
 
 Of course there is always a risk of the mass returning, but that risk is very low. In fact, Dr. Vidal said that the operation went so well that the risk of recurrence is less than 5%. I will still need to be monitored with occasional MRIs, but it's not something I'm going to worry about. Instead, I'm going to be worrying about how I'm every going to fit in all the activities I want to do now that I'm going to be pain free and back to an even better self!
 
+#### 1 Month Post-Op
+
+As of `04/01/2024` I was exactly one month out from surgery and this was also the day of my one month follow-up with Dr. Vidal. Usually, you would have a follow-up at 6 weeks but since I was moving to a new state, I was able to get in early.
+
+One hour before my follow-up appointment, I got another MRI so Dr. Vidal could review the results and check to ensure there was no re-growth of the mass. After my MRI I was able to walk into my follow-up appointment without crutches and they were really impressed. I was doing extremely well (a little too well) just one month after surgery. I was pain free, had little to no stiffness, and was walking without crutches and only a slight (cautious) limp.
+
+I explained my PT routine to them and they were impressed but also a little bit concerned as I was doing exercises that are usually performed at week 20 when I was only at week 4-5. They strongly suggested that I dial back my PT routine a bit so I don't overdo it and I agreed. Due to my high activity level in general, I was probably ahead of the curve in terms of recovery which isn't a bad thing but I was reminded that I still need to be careful.
+
+My incisions were healing well and the doctors did not have any concerns.
+
+For reference, here are the PT exercises I was doing at this point (before my doctors told me to dial it back a bit):
+
+- Bird dogs
+- Clamshells
+- Single leg dead lifts with about 10 lbs of weight + the bar
+- 140lbs sled pushes
+- Bulgarian split squats
+- Copenhagen planks
+- Squats with chair touch and resistance loop
+- Lateral step downs
+- 30lbs chest press with resistance bands
+- Single leg squats on a bosu ball
+
+Here are my one month post-op clinical notes:
+
+![post-op-1](post-op-1.png)
+![post-op-2](post-op-2.png)
+![post-op-3](post-op-3.png)
+
+---
+
 > I will be updating this section as I continue to recover if anything changes. If you don't see any updates, then that means I have nothing interesting to report 😉
 
 ### Conclusion
