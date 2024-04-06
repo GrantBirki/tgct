@@ -463,6 +463,8 @@ I explained my PT routine to them and they were impressed but also a little bit 
 
 My incisions were healing well and the doctors did not have any concerns.
 
+They also went over my MRI results from just an hour before. The MRI showed no signs of re-growth of the mass and everything looked great!
+
 For reference, here are the PT exercises I was doing at this point (before my doctors told me to dial it back a bit):
 
 - Bird dogs
