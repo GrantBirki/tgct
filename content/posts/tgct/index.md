@@ -484,6 +484,26 @@ Here are my one month post-op clinical notes:
 ![post-op-2](post-op-2.png)
 ![post-op-3](post-op-3.png)
 
+#### 14 Month Post-Op
+
+As of `04/29/2025` I am just about 14 months post-op. Overall, I have been doing great! I am doing a ton of walking, hiking, and traveling again. I went to Japan at about the 8 month post-op mark and walked about 10+ miles a day without any issues at all.
+
+About two weeks ago I was in the gym and was really starting to push myself with leg workouts. I perhaps overdid it a bit and started to feel a lot of pain and weekness in my hip. It lasted for several days and it closely mimicked the pain I had before surgery. This made me quite anxious so I scheduled an MRI to see if the TGCT had returned. To my relief, the MRI scans came back clean and the mass has not returned!
+
+![mri-04-28-2025-ax-pd-unilat](mri-04-28-2025-ax-pd-unilat.png)
+
+> MRI image from `04/28/2025` showing no signs of TGCT recurrence (AX PD - unilateral)
+
+![mri-04-28-2025-cor-pd-fs-unilat](mri-04-28-2025-cor-pd-fs-unilat.png)
+
+> MRI image from `04/28/2025` showing no signs of TGCT recurrence (Cor PD FS - unilateral)
+
+Here is a really interesting image showing the **before** (right) and **after** (left) of my hip joint (before and after surgery). The after image is 14 months post-op and the before image is from my first MRI when I was having a major TGCT flare up. You can really see the difference in the amount of inflammation and fluid in the joint!
+
+![mri-14-month-vs-oct-2023](mri-14-month-vs-oct-2023.png)
+
+> MRI from `04/28/2025` (left) vs MRI from `10/06/2023` (right)
+
 ---
 
 > I will be updating this section as I continue to recover if anything changes. If you don't see any updates, then that means I have nothing interesting to report 😉
