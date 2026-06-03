@@ -93,7 +93,7 @@ jobs:
 
       # upload the built site as an artifact for the deploy step
       - name: upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
@@ -166,7 +166,7 @@ jobs:
       # if the deployment was successful, add a 'rocket' reaction to the comment that triggered the deployment
       - name: rocket reaction
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: GrantBirki/comment@608e41b19bc973020ec0e189ebfdae935d7fe0cc # pin@v2.1.1
+        uses: GrantBirki/comment@3439715f0cf3b8fc29bf47be0e3226679c06c41a # pin@v3.0.0
         with:
           comment-id: ${{ needs.trigger.outputs.comment_id }}
           reactions: rocket
@@ -174,7 +174,7 @@ jobs:
       # if the deployment failed, add a '-1' (thumbs down) reaction to the comment that triggered the deployment
       - name: failure reaction
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: GrantBirki/comment@608e41b19bc973020ec0e189ebfdae935d7fe0cc # pin@v2.1.1
+        uses: GrantBirki/comment@3439715f0cf3b8fc29bf47be0e3226679c06c41a # pin@v3.0.0
         with:
           comment-id: ${{ needs.trigger.outputs.comment_id }}
           reactions: "-1"
