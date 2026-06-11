@@ -43,7 +43,7 @@ jobs:
 
     steps:
       # execute the branch-deploy action
-      - uses: github/branch-deploy@v11
+      - uses: github/branch-deploy@v11.1.2
         id: branch-deploy
         with:
           trigger: ".deploy"
@@ -61,7 +61,7 @@ jobs:
     steps:
       # checkout the project's repository based on the sha provided by the branch-deploy step
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.2
         with:
           ref: ${{ needs.trigger.outputs.sha }}
 
