@@ -43,7 +43,7 @@ jobs:
 
     steps:
       # execute the branch-deploy action
-      - uses: github/branch-deploy@v11
+      - uses: github/branch-deploy@f0984057ffe1aa340aa017b6eafb894310aed88e # pin@v12.0.0
         id: branch-deploy
         with:
           trigger: ".deploy"
@@ -155,6 +155,7 @@ jobs:
       # remove the default 'eyes' reaction from the comment that triggered the deployment
       # this reaction is added by the branch-deploy action by default
       - name: remove eyes reaction
+        if: ${{ needs.trigger.outputs.initial_reaction_id != '' }}
         env:
           GH_REPO: ${{ github.repository }}
           GH_TOKEN: ${{ github.token }}
