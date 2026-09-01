@@ -61,7 +61,7 @@ jobs:
     steps:
       # checkout the project's repository based on the sha provided by the branch-deploy step
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ needs.trigger.outputs.sha }}
 
@@ -167,7 +167,7 @@ jobs:
       # if the deployment was successful, add a 'rocket' reaction to the comment that triggered the deployment
       - name: rocket reaction
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: GrantBirki/comment@3439715f0cf3b8fc29bf47be0e3226679c06c41a # pin@v3.0.0
+        uses: GrantBirki/comment@937820f3623fd0e300294bcc64ac7577fc0ad4cc # pin@v3.0.3
         with:
           comment-id: ${{ needs.trigger.outputs.comment_id }}
           reactions: rocket
@@ -175,7 +175,7 @@ jobs:
       # if the deployment failed, add a '-1' (thumbs down) reaction to the comment that triggered the deployment
       - name: failure reaction
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: GrantBirki/comment@3439715f0cf3b8fc29bf47be0e3226679c06c41a # pin@v3.0.0
+        uses: GrantBirki/comment@937820f3623fd0e300294bcc64ac7577fc0ad4cc # pin@v3.0.3
         with:
           comment-id: ${{ needs.trigger.outputs.comment_id }}
           reactions: "-1"
