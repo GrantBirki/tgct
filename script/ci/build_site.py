@@ -5,6 +5,7 @@ import hashlib
 import os
 from pathlib import Path
 import re
+import stat
 import subprocess
 import tempfile
 
@@ -47,6 +48,25 @@ def verified_package(trusted):
     return package
 
 
+def validate_output(output):
+    if output.is_symlink() or not output.is_dir():
+        raise ValueError("Build output must be a real directory")
+
+    def unreadable(error):
+        raise error
+
+    # Pages packaging dereferences links, so admit regular static files only.
+    for directory, dirs, files in os.walk(output, onerror=unreadable, followlinks=False):
+        for name in dirs + files:
+            entry = (Path(directory) / name).lstat()
+            if stat.S_ISDIR(entry.st_mode):
+                continue
+            if not stat.S_ISREG(entry.st_mode) or entry.st_nlink != 1:
+                raise ValueError("Build output must contain only directories and unlinked regular files")
+    if not (output / "index.html").is_file():
+        raise ValueError("Build output is missing index.html")
+
+
 def build(trusted, candidate, trusted_sha, selected_sha, temp, base_url=""):
     verify_checkout(trusted, trusted_sha)
     verify_checkout(candidate, selected_sha)
@@ -70,8 +90,7 @@ def build(trusted, candidate, trusted_sha, selected_sha, temp, base_url=""):
         command += ["--baseURL", base_url]
     subprocess.run(command, cwd=candidate, check=True,
                    env={**os.environ, "HUGO_RESOURCEDIR": str(work / "resources")})
-    if output.is_symlink() or not output.is_dir():
-        raise ValueError("Build output must be a real directory")
+    validate_output(output)
     version_file = output / "version.txt"
     if version_file.is_symlink() or (version_file.exists() and not version_file.is_file()):
         raise ValueError("Version output must be a regular file")

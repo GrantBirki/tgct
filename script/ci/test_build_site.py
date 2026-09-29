@@ -3,6 +3,7 @@
 
 import hashlib
 import importlib.util
+import os
 from pathlib import Path
 import subprocess
 import tempfile
@@ -144,6 +145,43 @@ class BuildTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.build()
         self.assertFalse(any("--destination" in call for call in self.calls))
+
+    def test_nested_output_links_and_special_files_are_rejected(self):
+        for kind in ("symlink", "directory-link", "hardlink", "fifo"):
+            with self.subTest(kind=kind):
+                original = self.run_command
+                def unsafe_output(command, **kwargs):
+                    result = original(command, **kwargs)
+                    if "--destination" in command:
+                        output = Path(command[command.index("--destination") + 1])
+                        nested = output / "assets"
+                        nested.mkdir()
+                        target = nested / "unexpected"
+                        if kind == "symlink":
+                            target.symlink_to(self.package)
+                        elif kind == "directory-link":
+                            target.symlink_to(self.trusted, target_is_directory=True)
+                        elif kind == "hardlink":
+                            os.link(self.package, target)
+                        else:
+                            os.mkfifo(target)
+                    return result
+                with patch.object(build_site.subprocess, "run", side_effect=unsafe_output):
+                    with self.assertRaises(ValueError):
+                        self.build()
+                self.assertEqual(self.package.read_bytes(), b"reviewed test package")
+
+    def test_missing_index_is_rejected(self):
+        original = self.run_command
+        def missing_index(command, **kwargs):
+            result = original(command, **kwargs)
+            if "--destination" in command:
+                output = Path(command[command.index("--destination") + 1])
+                (output / "index.html").unlink()
+            return result
+        with patch.object(build_site.subprocess, "run", side_effect=missing_index):
+            with self.assertRaises(ValueError):
+                self.build()
 
     def test_symlinked_version_output_is_rejected(self):
         original = self.run_command
