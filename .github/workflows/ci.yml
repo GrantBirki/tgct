@@ -15,22 +15,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v6
-
-      # read the hugo version from the .hugo-version file in this repository
-      - name: set hugo version
-        id: hugo-version
-        run: |
-          HUGO_VERSION=$(cat .hugo-version)
-          echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_OUTPUT
-
-      # install the hugo cli using the version detected in the previous step
-      - name: install vendored hugo cli
+      - name: validate selected revisions
         env:
-          HUGO_VERSION: ${{ steps.hugo-version.outputs.HUGO_VERSION }}
-        run: sudo dpkg -i vendor/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          TRUSTED_SHA: ${{ github.event.pull_request.base.sha || github.sha }}
+          SELECTED_SHA: ${{ github.sha }}
+        run: |
+          [[ "$TRUSTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$SELECTED_SHA" =~ ^[0-9a-f]{40}$ ]]
 
-      # build the site with hugo
-      - name: build with hugo
-        run: hugo --gc --logLevel info
+      - name: checkout trusted tooling
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin@v6
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.sha }}
+          path: trusted
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: checkout selected content
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin@v6
+        with:
+          ref: ${{ github.sha }}
+          path: candidate
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: test build helper
+        run: python3 candidate/script/ci/test_build_site.py
+
+      - name: build with verified Hugo
+        id: site
+        env:
+          TRUSTED_SHA: ${{ github.event.pull_request.base.sha || github.sha }}
+          SELECTED_SHA: ${{ github.sha }}
+          BASE_URL: ''
+        run: python3 candidate/script/ci/build_site.py

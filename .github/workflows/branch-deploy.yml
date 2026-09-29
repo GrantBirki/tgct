@@ -5,14 +5,7 @@ on:
   issue_comment:
     types: [ created ]
 
-# Permissions needed for reacting and adding comments for IssueOps commands
-permissions:
-  pull-requests: write
-  deployments: write
-  contents: write
-  checks: read
-  pages: write
-  id-token: write
+permissions: {}
 
 # set an environment variable for use in the jobs pointing to my site
 env:
@@ -31,7 +24,16 @@ jobs:
       contains(github.event.comment.body, '.wcid') ||
       contains(github.event.comment.body, '.unlock')) }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+      pull-requests: write
+      checks: read
+      statuses: read
+      pages: read
     outputs: # set outputs for use in downstream jobs
+      context: ${{ steps.branch-deploy.outputs.context }}
+      base_url: ${{ steps.pages.outputs.base_url }}
       continue: ${{ steps.branch-deploy.outputs.continue }}
       noop: ${{ steps.branch-deploy.outputs.noop }}
       deployment_id: ${{ steps.branch-deploy.outputs.deployment_id }}
@@ -53,154 +55,96 @@ jobs:
           skip_completing: "true" # we will complete the deployment manually in the 'result' job
           admins: "GrantBirki"
 
-  # build the github-pages site with hugo
+      - name: read Pages configuration
+        if: ${{ steps.branch-deploy.outputs.continue == 'true' }}
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # pin@v6.0.0
+        with:
+          enablement: false
+
   build:
     needs: trigger
-    if: ${{ needs.trigger.outputs.continue == 'true' }} # only run if the trigger job set continue to true
+    if: ${{ needs.trigger.outputs.continue == 'true' && fromJSON(needs.trigger.outputs.context).run_attempt == github.run_attempt }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
-      # checkout the project's repository based on the sha provided by the branch-deploy step
-      - name: checkout
-        uses: actions/checkout@v6
+      - name: validate selected revisions
+        env:
+          TRUSTED_SHA: ${{ github.sha }}
+          SELECTED_SHA: ${{ needs.trigger.outputs.sha }}
+        run: |
+          [[ "$TRUSTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$SELECTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+
+      - name: checkout trusted tooling
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin@v6
+        with:
+          ref: ${{ github.sha }}
+          path: trusted
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: checkout selected content
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin@v6
         with:
           ref: ${{ needs.trigger.outputs.sha }}
+          path: candidate
+          fetch-depth: 1
+          persist-credentials: false
 
-      # read the hugo version from the .hugo-version file in this repository
-      - name: set hugo version
-        id: hugo-version
-        run: |
-          HUGO_VERSION=$(cat .hugo-version)
-          echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_OUTPUT
-
-      # install the hugo cli using the version detected in the previous step
-      - name: install vendored hugo cli
+      - name: build with verified Hugo
+        id: site
         env:
-          HUGO_VERSION: ${{ steps.hugo-version.outputs.HUGO_VERSION }}
-        run: sudo dpkg -i vendor/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          TRUSTED_SHA: ${{ github.sha }}
+          SELECTED_SHA: ${{ needs.trigger.outputs.sha }}
+          BASE_URL: ${{ needs.trigger.outputs.base_url }}
+        run: python3 trusted/script/ci/build_site.py
 
-      # configure the GitHub Pages action
-      - name: setup pages
-        id: pages
-        uses: actions/configure-pages@v6.0.0
-
-      # build the site with hugo
-      - name: build with hugo
-        run: hugo --gc --logLevel info --baseURL ${{ steps.pages.outputs.base_url }}
-
-      # this step is custom to my site and adds a 'commit' version to the site
-      - name: write build version
-        run: echo ${GITHUB_SHA} > ./public/version.txt
-
-      # upload the built site as an artifact for the deploy step
       - name: upload artifact
-        uses: actions/upload-pages-artifact@v5
+        id: artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # pin@v5
         with:
-          path: ./public
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}-${{ needs.trigger.outputs.sha }}
+          path: ${{ steps.site.outputs.path }}
 
-  # deploy to GitHub Pages
   deploy:
     needs: [ trigger, build ]
-    if: ${{ needs.trigger.outputs.continue == 'true' }} # only run if the trigger job set continue to true
+    if: ${{ needs.trigger.outputs.continue == 'true' && fromJSON(needs.trigger.outputs.context).run_attempt == github.run_attempt }}
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      deployment: false
 
     steps:
-      # deploy the site to GitHub Pages
-      - name: deploy
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: complete build-only noop
+        if: ${{ needs.trigger.outputs.noop == 'true' }}
+        run: echo "Noop build completed; publication is skipped."
 
-  # update the deployment result - manually complete the deployment that was created by the branch-deploy action
+      - name: deploy
+        if: ${{ needs.trigger.outputs.noop != 'true' }}
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # pin@v5
+        with:
+          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}-${{ needs.trigger.outputs.sha }}
+
   result:
     needs: [ trigger, build, deploy ]
-    runs-on: ubuntu-latest
-    # run even on failures but only if the trigger job set continue to true
     if: ${{ always() && needs.trigger.outputs.continue == 'true' }}
-
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+      pull-requests: write
     steps:
-      # if a previous step failed, set a variable to use as the deployment status
-      - name: set deployment status
-        id: deploy-status
-        if: ${{ needs.trigger.result == 'failure' || needs.build.result == 'failure' ||
-          needs.deploy.result == 'failure' }}
-        run: |
-          echo "DEPLOY_STATUS=failure" >> $GITHUB_OUTPUT
-
-      # use the GitHub CLI to update the deployment status that was initiated by the branch-deploy action
-      - name: create a deployment status
-        env:
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ github.token }}
-          DEPLOY_STATUS: ${{ steps.deploy-status.outputs.DEPLOY_STATUS }}
-        run: |
-          if [ -z "${DEPLOY_STATUS}" ]; then
-            DEPLOY_STATUS="success"
-          fi
-
-          gh api \
-            --method POST \
-            repos/{owner}/{repo}/deployments/${{ needs.trigger.outputs.deployment_id }}/statuses \
-            -f environment='${{ needs.trigger.outputs.environment }}' \
-            -f state=${DEPLOY_STATUS}
-        
-      # use the GitHub CLI to remove the non-sticky lock that was created by the branch-deploy action
-      - name: remove a non-sticky lock
-        env:
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api \
-            --method DELETE \
-            repos/{owner}/{repo}/git/refs/heads/${{ needs.trigger.outputs.environment }}-branch-deploy-lock
-
-      # remove the default 'eyes' reaction from the comment that triggered the deployment
-      # this reaction is added by the branch-deploy action by default
-      - name: remove eyes reaction
-        if: ${{ needs.trigger.outputs.initial_reaction_id != '' }}
-        env:
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api \
-            --method DELETE \
-            repos/{owner}/{repo}/issues/comments/${{ needs.trigger.outputs.comment_id }}/reactions/${{ needs.trigger.outputs.initial_reaction_id }}
-
-      # if the deployment was successful, add a 'rocket' reaction to the comment that triggered the deployment
-      - name: rocket reaction
-        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: GrantBirki/comment@3439715f0cf3b8fc29bf47be0e3226679c06c41a # pin@v3.0.0
+      - name: report result
+        uses: grantbirki/branch-deploy@a7a7ea40a15a79a036322c2924ab74f5eded702c # pin@v12.1.0
         with:
-          comment-id: ${{ needs.trigger.outputs.comment_id }}
-          reactions: rocket
-
-      # if the deployment failed, add a '-1' (thumbs down) reaction to the comment that triggered the deployment
-      - name: failure reaction
-        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: GrantBirki/comment@3439715f0cf3b8fc29bf47be0e3226679c06c41a # pin@v3.0.0
-        with:
-          comment-id: ${{ needs.trigger.outputs.comment_id }}
-          reactions: "-1"
-
-      # if the deployment was successful, add a 'success' comment
-      - name: success comment
-        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # pin@v5.0.0
-        with:
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            ### Deployment Results ✅
-
-            **${{ needs.trigger.outputs.actor_handle }}** successfully deployed branch `${{ needs.trigger.outputs.ref }}` to **${{ needs.trigger.outputs.environment }}**
-
-            > [View Live Deployment](${{ env.web_url }}) :link:
-
-      # if the deployment was not successful, add a 'failure' comment
-      - name: failure comment
-        if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # pin@v5.0.0
-        with:
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            ### Deployment Results ❌
-
-            **${{ needs.trigger.outputs.actor_handle }}** had a failure when deploying `${{ needs.trigger.outputs.ref }}` to **${{ needs.trigger.outputs.environment }}**
+          result_mode: true
+          context: ${{ needs.trigger.outputs.context }}
+          job_results: ${{ toJSON(needs.*.result) }}
+          result_url: ${{ env.web_url }}
