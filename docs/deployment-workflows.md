@@ -1,6 +1,6 @@
 # Deployment workflows
 
-Site content is rendered in a read-only job with Hugo Extended 0.119.0. Deployment workflows load the build helper and checksum-verified package from the exact workflow commit, and render the exact selected content commit in a separate checkout. The package is extracted without running installation scripts. Hugo updates require a reviewed change to the trusted version, package, and digest before deployments can use them.
+Site content is rendered in a read-only job with Hugo Extended 0.119.0. Deployment workflows load the build helper and checksum-verified package from the exact workflow commit and render the exact selected content commit in a separate checkout. The package is extracted without running installation scripts. Hugo updates require a reviewed change to the trusted version, package, and digest before deployments can use them.
 
 Pull request CI tests the proposed helper without deployment credentials, using the base commit's package. A package upgrade therefore needs its trusted tooling change merged before CI or deployments render with the new package.
 
