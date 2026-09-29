@@ -20,16 +20,17 @@ defaults:
   run:
     shell: bash
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 
 jobs:
   deployment-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: read
+      pages: read
     outputs: # set outputs for use in downstream jobs
+      base_url: ${{ steps.pages.outputs.base_url }}
       continue: ${{ steps.deployment-check.outputs.continue }}
 
     steps:
@@ -41,50 +42,74 @@ jobs:
           merge_deploy_mode: "true"
           environment: github-pages
 
+      - name: read Pages configuration
+        if: ${{ steps.deployment-check.outputs.continue == 'true' }}
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # pin@v6.0.0
+        with:
+          enablement: false
+
   build:
     if: ${{ needs.deployment-check.outputs.continue == 'true' }}
     needs: deployment-check
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v6
-
-      - name: set hugo version
-        id: hugo-version
-        run: |
-          HUGO_VERSION=$(cat .hugo-version)
-          echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_OUTPUT
-
-      - name: install vendored hugo cli
+      - name: validate selected revisions
         env:
-          HUGO_VERSION: ${{ steps.hugo-version.outputs.HUGO_VERSION }}
-        run: sudo dpkg -i vendor/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          TRUSTED_SHA: ${{ github.sha }}
+          SELECTED_SHA: ${{ github.sha }}
+        run: |
+          [[ "$TRUSTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$SELECTED_SHA" =~ ^[0-9a-f]{40}$ ]]
 
-      - name: setup pages
-        id: pages
-        uses: actions/configure-pages@v6.0.0
+      - name: checkout trusted tooling
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin@v6
+        with:
+          ref: ${{ github.sha }}
+          path: trusted
+          fetch-depth: 1
+          persist-credentials: false
 
-      - name: build with hugo
-        run: hugo --gc --logLevel info --baseURL ${{ steps.pages.outputs.base_url }}
+      - name: checkout selected content
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin@v6
+        with:
+          ref: ${{ github.sha }}
+          path: candidate
+          fetch-depth: 1
+          persist-credentials: false
 
-      - name: write build version
-        run: echo ${GITHUB_SHA} > ./public/version.txt
+      - name: build with verified Hugo
+        id: site
+        env:
+          TRUSTED_SHA: ${{ github.sha }}
+          SELECTED_SHA: ${{ github.sha }}
+          BASE_URL: ${{ needs.deployment-check.outputs.base_url }}
+        run: python3 trusted/script/ci/build_site.py
 
       - name: upload artifact
-        uses: actions/upload-pages-artifact@v5
+        id: artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # pin@v5
         with:
-          path: ./public
+          name: site-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
+          path: ${{ steps.site.outputs.path }}
 
   deploy:
     if: ${{ needs.deployment-check.outputs.continue == 'true' }}
     needs: [ deployment-check, build ]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
 
     steps:
       - name: deploy
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # pin@v5
+        with:
+          artifact_name: site-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
