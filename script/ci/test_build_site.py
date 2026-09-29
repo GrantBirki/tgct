@@ -61,7 +61,10 @@ class BuildTests(unittest.TestCase):
         (self.candidate / ".hugo-version").write_text("999.0.0")
         (self.candidate / "vendor").mkdir()
         (self.candidate / "vendor" / build_site.PACKAGE).write_text("candidate package")
-        (self.candidate / "build_site.py").write_text("raise RuntimeError('candidate helper')")
+        (self.candidate / "script/ci").mkdir(parents=True)
+        candidate_helper = self.candidate / "script/ci/build_site.py"
+        candidate_helper.write_text("raise RuntimeError('candidate helper')")
+        (self.candidate / "vendor/checksums.txt").write_text("candidate digest")
         output = self.build()
         self.assertEqual((output / "version.txt").read_text(), SELECTED + "\n")
         extraction = next(call for call in self.calls if call[0] == "dpkg-deb")
@@ -70,7 +73,9 @@ class BuildTests(unittest.TestCase):
         self.assertTrue(Path(render[0]).is_absolute())
         self.assertEqual(render[render.index("--source") + 1], str(self.candidate))
         self.assertEqual(render[-2:], ["--baseURL", "https://example.com/"])
-        self.assertNotIn(output, self.trusted.parents)
+        self.assertNotIn(self.trusted, output.parents)
+        self.assertNotIn(self.candidate, output.parents)
+        self.assertFalse(any(str(candidate_helper) in call for call in self.calls))
         self.assertNotIn("sudo", str(self.calls))
 
     def test_invalid_or_mismatched_sha_stops_before_extraction(self):
