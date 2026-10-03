@@ -22,6 +22,8 @@ defaults:
 
 permissions: {}
 
+cache-mode: none
+
 jobs:
   deployment-check:
     runs-on: ubuntu-latest
